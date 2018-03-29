@@ -1,0 +1,19 @@
+This is the repeatability package for the Hylaa tool for the ARCH workshop tool competition 2017, prepared by Stanley Bak in April 2017.
+
+Please download and install version 1.0 of Hylaa from this link: https://github.com/stanleybak/hylaa/releases/tag/v1.0 . Installation instructions are in the README which comes with the tool.
+
+Hylaa only had results in the competition for the building benchmark. To recreate these results, run each of the python scripts from a terminal (using the python command). Here is a description of each script:
+
+
+* building_timing.py - Timing measurement for safe case. This corresponds to model BLDF01, specification BLDS01. Note your timing may vary from the report based on your machine.
+
+* building_affine_timing.py - Timing measurements for the safe case (affine dynamics, not time-varying inputs). This corresponds to model BLDC01, specification BLDS01. Note your timing may vary from the report based on your machine.
+
+* building_unsafe.py - Timing measurement for the unsafe case #1. This corresponds to model BLDF01, specification BLDU01. Note your timing may vary from the report based on your machine.
+
+* building_unsafe2.py - Timing measurement for the unsafe case #2. This corresponds to model BLDF01, specification BLDU02. Note your timing may vary from the report based on your machine.
+
+* building_plot_1sec.py - Produces 1 second plot (hylaa_building_1sec.png). This takes longer than the timing measurement due to the overhead of plotting.
+
+* building_plot_20sec.py - Produces 20 second plot (hylaa_building_20sec.png). This takes a few minutes to run, due to the overhead of plotting.
+

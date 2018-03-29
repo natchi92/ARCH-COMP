@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+  <component id="aut1">
+    <param name="x1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="x2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="x3" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="x4" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="x5" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="x6" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="x7" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="x8" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="tick" type="label" local="false" />
+    <location id="1" name="loc1">
+      <flow>false</flow>
+    </location>
+    <transition source="1" target="1">
+      <label>tick</label>
+      <guard>x1-x2 &gt;= -1 &amp; x5-x6 &gt;= 3</guard>
+      <assignment>x1:=38+x8 &amp;
+x2:=36+x8 &amp;
+x3:=55+x1 &amp;
+x4:=35+x3 &amp;
+x5:=54+x4 &amp;
+x6:=58+x4 &amp;
+x7:=90+x5 &amp;
+x8:=16+x7</assignment>
+    </transition>
+    <transition source="1" target="1">
+      <label>tick</label>
+      <guard>x1-x2 &lt;= -1 &amp; x5-x6 &gt;= 3</guard>
+      <assignment>x1:= 38+x8 &amp;
+x2:= 36+x8 &amp;
+x3:= 54+x2 &amp;
+x4:= 35+x3 &amp;
+x5:= 54+x4 &amp;
+x6:= 58+x4 &amp;
+x7:= 90+x5 &amp;
+x8:= 16+x7</assignment>
+    </transition>
+    <transition source="1" target="1">
+      <label>tick</label>
+      <guard>x1-x2 &gt;= -1 &amp; x5-x6 &lt;= 3</guard>
+      <assignment>x1:=38+x8 &amp;
+x2:=36+x8 &amp;
+x3:=55+x1 &amp;
+x4:=35+x3 &amp;
+x5:=54+x4 &amp;
+x6:=58+x4 &amp;
+x7:=93+x6 &amp;
+x8:=16+x7</assignment>
+    </transition>
+    <transition source="1" target="1">
+      <label>tick</label>
+      <guard>x1-x2 &lt;= -1 &amp; x5-x6 &lt;= 3</guard>
+      <assignment>x1:=38+x8 &amp;
+x2:=36+x8 &amp;
+x3:=54+x2 &amp;
+x4:=35+x3 &amp;
+x5:=54+x4 &amp;
+x6:=58+x4 &amp;
+x7:=93+x6 &amp;
+x8:=16+x7</assignment>
+    </transition>
+  </component>
+  <component id="counter">
+    <param name="tick" type="label" local="false" />
+    <location id="1" name="loc1" />
+    <location id="2" name="loc2" />
+    <location id="3" name="loc3" />
+    <location id="4" name="loc4" />
+    <location id="5" name="loc5" />
+    <location id="6" name="loc6" />
+    <location id="7" name="loc7" />
+    <location id="8" name="loc8" />
+    <location id="9" name="loc9" />
+    <location id="10" name="loc10" />
+    <location id="11" name="loc11" />
+    <transition source="1" target="2">
+      <label>tick</label>
+    </transition>
+    <transition source="2" target="3">
+      <label>tick</label>
+    </transition>
+    <transition source="3" target="4">
+      <label>tick</label>
+    </transition>
+    <transition source="4" target="5">
+      <label>tick</label>
+    </transition>
+    <transition source="5" target="6">
+      <label>tick</label>
+    </transition>
+    <transition source="6" target="7">
+      <label>tick</label>
+    </transition>
+    <transition source="7" target="8">
+      <label>tick</label>
+    </transition>
+    <transition source="8" target="9">
+      <label>tick</label>
+    </transition>
+    <transition source="9" target="10">
+      <label>tick</label>
+    </transition>
+    <transition source="10" target="11">
+      <label>tick</label>
+    </transition>
+  </component>
+  <component id="sys1">
+    <param name="x1" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="x2" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="x3" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="x4" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="x5" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="x6" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="x7" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="x8" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="tick" type="label" local="false" />
+    <bind component="aut1" as="aut1_1">
+      <map key="x1">x1</map>
+      <map key="x2">x2</map>
+      <map key="x3">x3</map>
+      <map key="x4">x4</map>
+      <map key="x5">x5</map>
+      <map key="x6">x6</map>
+      <map key="x7">x7</map>
+      <map key="x8">x8</map>
+      <map key="tick">tick</map>
+    </bind>
+    <bind component="counter" as="counter_1">
+      <map key="tick">tick</map>
+    </bind>
+  </component>
+</sspaceex>
+

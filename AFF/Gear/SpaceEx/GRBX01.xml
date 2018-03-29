@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+  <component id="free_movement">
+    <param name="Sx" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="Sy" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="Vx" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="Vy" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="F0" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="T0" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="ms" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="mg" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="Jg" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="R" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="b" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="tancita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="sincita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="coscita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="eps" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="deltap" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <location id="2" name="always" x="448.0" y="143.0" width="148.0" height="122.0">
+      <flow>Vx'==F0/ms &amp; 
+Sx'==Vx &amp;
+Vy'==-T0*R/Jg &amp; 
+Sy'==Vy</flow>
+    </location>
+  </component>
+  <component id="collision">
+    <param name="Sx" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="Sy" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="Vx" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" placement="west" />
+    <param name="Vy" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" placement="west" />
+    <param name="F0" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="T0" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="ms" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="mg" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="Jg" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="R" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="b" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="tancita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="sincita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="coscita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="eps" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="deltap" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="impacts1" type="label" local="false" placement="east" />
+    <location id="2" name="free" x="440.0" y="338.0" width="192.0" height="110.0">
+      <invariant>Sy&lt;=-tancita*Sx &amp; 
+Sy&gt;=tancita*Sx</invariant>
+    </location>
+    <transition source="2" target="2">
+      <label>impacts1</label>
+      <guard>Sx&gt;=-b/tancita &amp; Sy&gt;=-tancita*Sx &amp;  Vy+tancita*Vx&gt;1e-3</guard>
+      <assignment>Vx:=(ms*coscita*coscita-mg*eps*sincita*sincita)*Vx/(ms*coscita*coscita+mg*sincita*sincita) - ((eps+1)*mg*sincita*coscita)*Vy/(ms*coscita*coscita+mg*sincita*sincita)&amp;
+Vy:=(mg*sincita*sincita-ms*eps*coscita*coscita)*Vy/(ms*coscita*coscita+mg*sincita*sincita) - ((eps+1)*ms*sincita*coscita)*Vx/(ms*coscita*coscita+mg*sincita*sincita)</assignment>
+      <labelposition x="-221.0" y="-101.0" width="474.0" height="96.0" />
+    </transition>
+  </component>
+  <component id="bounds">
+    <param name="Sx" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="Sy" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="false" placement="west" />
+    <param name="Vx" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="false" placement="west" />
+    <param name="Vy" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" placement="west" />
+    <param name="F0" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="T0" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="ms" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="mg" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="Jg" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="R" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="b" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="tancita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="sincita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="coscita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="eps" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="deltap" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="out_of_bounds" type="label" local="false" placement="east" />
+    <location id="2" name="always" x="440.0" y="338.0" width="136.0" height="74.0">
+      <invariant>0 &lt;= Sy &lt;= b &amp;
+Sx&lt;= deltap</invariant>
+    </location>
+    <transition source="2" target="2">
+      <label>out_of_bounds</label>
+      <guard>Sy &gt;= b &amp; Vy &gt; 1e-3</guard>
+      <assignment>Vy := -Vy</assignment>
+      <labelposition x="-142.0" y="-30.0" width="138.0" height="68.0" />
+      <middlepoint x="-92.0" y="-38.0" />
+    </transition>
+    <transition source="2" target="2">
+      <guard>Sy &lt;= 0 &amp; Vy &lt; -1e-3</guard>
+      <assignment>Vy := -Vy</assignment>
+      <labelposition x="-156.0" y="-26.0" width="150.0" height="70.0" />
+      <middlepoint x="-91.0" y="36.0" />
+    </transition>
+  </component>
+  <component id="monitor">
+    <param name="Sx" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="Sy" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="Vx" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="Vy" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="F0" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="T0" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="ms" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="mg" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="Jg" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="R" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="b" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="tancita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="sincita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="coscita" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="eps" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="impacts1" type="label" local="false" />
+    <param name="deltap" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="I" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="t" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="out_of_bounds" type="label" local="false" />
+    <location id="2" name="free" x="380.0" y="334.0" width="114.0" height="110.0">
+      <invariant>Sx&lt;= deltap</invariant>
+      <flow>I'==0 &amp;
+t' == 1</flow>
+    </location>
+    <location id="1" name="meshed" x="701.0" y="334.0" width="118.0" height="116.0">
+      <flow>false</flow>
+    </location>
+    <transition source="2" target="2">
+      <label>impacts1</label>
+      <assignment>I:= I + ((eps+1)*ms*mg*sincita)*Vx/(ms*coscita*coscita+mg*sincita*sincita) 
++ ((eps+1)*ms*mg*coscita)*Vy/(ms*coscita*coscita+mg*sincita*sincita)</assignment>
+      <labelposition x="-224.0" y="-114.0" width="466.0" height="114.0" />
+    </transition>
+    <transition source="2" target="1">
+      <guard>Sx &gt;= deltap &amp;
+Vx &gt; 0</guard>
+      <assignment>I:=I+ms*Vx+ms*Vy</assignment>
+      <labelposition x="-45.0" y="-59.0" width="154.0" height="88.0" />
+    </transition>
+    <transition source="2" target="2">
+      <label>out_of_bounds</label>
+      <labelposition x="-133.0" y="-23.0" width="134.0" height="56.0" />
+      <middlepoint x="-100.0" y="2.0" />
+    </transition>
+  </component>
+  <component id="gear">
+    <param name="Sx" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" x="346.0" y="362.0" />
+    <param name="Sy" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" x="322.0" y="397.0" />
+    <param name="Vx" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" x="302.0" y="421.0" />
+    <param name="Vy" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" x="282.0" y="445.0" />
+    <param name="F0" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="T0" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="ms" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="mg" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="Jg" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="R" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="b" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="tancita" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="sincita" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="coscita" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="eps" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="deltap" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="impacts1" type="label" local="true" x="535.0" y="266.0" />
+    <param name="out_of_bounds" type="label" local="true" x="514.0" y="450.0" />
+    <param name="I" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" x="856.0" y="513.0" />
+    <param name="t" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" x="856.0" y="544.0" />
+    <bind component="free_movement" as="free_movement_1" x="215.0" y="265.0" width="84.0" height="100.0">
+      <map key="Sx">Sx</map>
+      <map key="Sy">Sy</map>
+      <map key="Vx">Vx</map>
+      <map key="Vy">Vy</map>
+      <map key="F0">F0</map>
+      <map key="T0">T0</map>
+      <map key="ms">ms</map>
+      <map key="mg">mg</map>
+      <map key="Jg">Jg</map>
+      <map key="R">R</map>
+      <map key="b">b</map>
+      <map key="tancita">tancita</map>
+      <map key="sincita">sincita</map>
+      <map key="coscita">coscita</map>
+      <map key="eps">eps</map>
+      <map key="deltap">deltap</map>
+    </bind>
+    <bind component="collision" as="collision_1" x="438.0" y="265.0" width="122.0" height="100.0">
+      <map key="Sx">Sx</map>
+      <map key="Sy">Sy</map>
+      <map key="Vx">Vx</map>
+      <map key="Vy">Vy</map>
+      <map key="F0">F0</map>
+      <map key="T0">T0</map>
+      <map key="ms">ms</map>
+      <map key="mg">mg</map>
+      <map key="Jg">Jg</map>
+      <map key="R">R</map>
+      <map key="b">b</map>
+      <map key="tancita">tancita</map>
+      <map key="sincita">sincita</map>
+      <map key="coscita">coscita</map>
+      <map key="eps">eps</map>
+      <map key="deltap">deltap</map>
+      <map key="impacts1">impacts1</map>
+    </bind>
+    <bind component="bounds" as="bounds_1" x="426.0" y="421.0" width="102.0" height="92.0">
+      <map key="Sx">Sx</map>
+      <map key="Sy">Sy</map>
+      <map key="Vx">Vx</map>
+      <map key="Vy">Vy</map>
+      <map key="F0">F0</map>
+      <map key="T0">T0</map>
+      <map key="ms">ms</map>
+      <map key="mg">mg</map>
+      <map key="Jg">Jg</map>
+      <map key="R">R</map>
+      <map key="b">b</map>
+      <map key="tancita">tancita</map>
+      <map key="sincita">sincita</map>
+      <map key="coscita">coscita</map>
+      <map key="eps">eps</map>
+      <map key="deltap">deltap</map>
+      <map key="out_of_bounds">out_of_bounds</map>
+    </bind>
+    <bind component="monitor" as="monitor_1" x="670.0" y="560.0" width="222.0" height="124.0">
+      <map key="Sx">Sx</map>
+      <map key="Sy">Sy</map>
+      <map key="Vx">Vx</map>
+      <map key="Vy">Vy</map>
+      <map key="F0">F0</map>
+      <map key="T0">T0</map>
+      <map key="ms">ms</map>
+      <map key="mg">mg</map>
+      <map key="Jg">Jg</map>
+      <map key="R">R</map>
+      <map key="b">b</map>
+      <map key="tancita">tancita</map>
+      <map key="sincita">sincita</map>
+      <map key="coscita">coscita</map>
+      <map key="eps">eps</map>
+      <map key="impacts1">impacts1</map>
+      <map key="deltap">deltap</map>
+      <map key="I">I</map>
+      <map key="t">t</map>
+      <map key="out_of_bounds">out_of_bounds</map>
+    </bind>
+  </component>
+  <component id="sys">
+    <param name="Sx" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" x="397.0" y="135.0" />
+    <param name="Sy" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" x="397.0" y="160.0" />
+    <param name="Vx" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" x="398.0" y="183.0" />
+    <param name="Vy" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" x="398.0" y="206.0" />
+    <param name="I" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="t" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <bind component="gear" as="gear_1" x="280.0" y="183.0" width="100.0" height="158.0">
+      <note>tancita = tan (36 degrees)
+sincita = sin (36 degrees)
+coscita = cos (36 degrees)</note>
+      <map key="Sx">Sx</map>
+      <map key="Sy">Sy</map>
+      <map key="Vx">Vx</map>
+      <map key="Vy">Vy</map>
+      <map key="F0">70</map>
+      <map key="T0">1</map>
+      <map key="ms">3.2</map>
+      <map key="mg">18.1</map>
+      <map key="Jg">0.09</map>
+      <map key="R">0.08</map>
+      <map key="b">0.01</map>
+      <map key="tancita">0.726542528</map>
+      <map key="sincita">0.58778525229</map>
+      <map key="coscita">0.80901699437</map>
+      <map key="eps">0.9</map>
+      <map key="deltap">-0.002</map>
+      <map key="I">I</map>
+      <map key="t">t</map>
+    </bind>
+  </component>
+</sspaceex>
+

@@ -1,0 +1,241 @@
+\documentclass[a4paper,10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DECOMMENTER LA LIGNE CI-DESSOUS POUR VOIR LES COMMENTAIRES
+% \def \VersionWithComments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{fourier}
+\usepackage{abstract}
+\renewcommand{\abstractname}{} 
+
+\usepackage[svgnames]{xcolor}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{darkgreen}{rgb}{0, 0.5, 0}
+\definecolor{darkpurple}{rgb}{0.7, 0, 0.7}
+\definecolor{violetcurie}{RGB}{115,26,67}
+\definecolor{forestgreen}{rgb}{0.13,0.54,0.13}
+\definecolor{darkblue}{rgb}{0, 0, 0.7}
+
+\usepackage{graphics}
+\graphicspath{{figures/}}
+
+\addtolength{\topmargin}{-90pt}
+\addtolength{\oddsidemargin}{-70pt}
+\addtolength{\evensidemargin}{-70pt}
+\addtolength{\textwidth}{140pt}
+\addtolength{\textheight}{180pt}
+
+\newenvironment{packed_itemize}{
+\begin{itemize}
+  \setlength{\itemsep}{2pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DYNAMIC LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[
+%		colorlinks=true,
+%% 		pagebackref=true,
+%		citecolor=darkgreen,
+%		linkcolor=darkblue,
+%		urlcolor=darkpurple,
+	]{hyperref}
+
+
+\usepackage{pgf}
+
+
+\hyphenation{parameters}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifdefined \VersionWithComments
+	\newcommand{\ea}[1]{{\color{blue}\textbf{\'EA}: #1}}
+	\newcommand{\gf}[1]{{\color{forestgreen}\textbf{GF}: #1}}
+	\newcommand{\todo}[1]{{\color{red}\textbf{TODO}: #1}}
+% 	\newenvironment{avirer}
+% 		{\color{gray} $\Leftarrow$ \textbf{Ce qui suit est à virer, réécrire ou mettre ailleurs.}}
+% 		{\textbf{Fin à virer.} $\Rightarrow$}
+\else
+	\newcommand{\ma}[1]{}
+	\newcommand{\gf}[1]{}
+	\newcommand{\todo}[1]{}
+% 	\newenvironment{avirer}
+% 		{\begin{comment}}
+% 		{\end{comment}}
+\fi
+
+%opening
+\title{5th International Workshop on Applied Reachability for Continuous and Hybrid Systems}
+\author{Matthias Althoff$^1$ and Goran Frehse$^2$ \\
+$^1$TU M\"unchen, Germany \\
+$^2$Université Joseph Fourier Grenoble 1 -- Verimag, France
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \maketitle
+\thispagestyle{empty}
+%% FAKE HEADER
+\begin{center}
+        \includegraphics[width=0.2\columnwidth]{ARCH_logo_1_bold.pdf} \\
+	%\parbox{2.3cm}{\includegraphics[scale=1]{syncop.png}} \parbox{5cm}{ \textbf{\Huge{SynCoP 2014}}}
+	\textbf{\LARGE{5th Int. Workshop on \\ Applied Verification for Continuous and Hybrid Systems}}
+	
+	\smallskip \smallskip
+	
+	\textbf{\Large{Part of ADHS, Oxford, UK, July 13, 2018}}
+	
+
+%	\bigskip
+%	\includegraphics[scale=1]{syncop.png}
+	
+	
+%  \includegraphics[scale = 0.4]{./Figures/cex_non_merged.jpg}
+\end{center}
+
+\bigskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Proposals should be submitted in a maximum 2-page PDF file, containing 
+%the following information:
+%
+%- Workshop or tutorial title,
+%- Abstract (maximum 200 words),
+%- The topic of the workshop/tutorial and how it relates to CPSWeek,
+%- The organizers behind the workshop/tutorial including contact 
+%  information, and short bio and affiliation,
+%- Proposed Program Committee,
+%- Planned review procedures,
+%- In the case of a workshop what the intended format will be (invited 
+%  presentations, submitted presentations, panels, etc),
+%- Expected sponsorships (if any),
+%- Profile of a typical attendee (academic researcher, student or 
+%  industry participant),
+%- A rough estimate of the number of participants,
+%- In case the workshop/tutorial has been previously held, provide 
+%  information on the conference, date, and number of attendees.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection*{Workshop Title / Acronym}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%ARCH 2014: 1st International Workshop on Applied Reachability for Continuous and Hybrid Systems
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection*{Abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+\vspace{-1cm}
+
+\begin{abstract}
+\noindent
+%While progress in the verification of continuous and hybrid systems has lead to academic tools and algorithms that can handle systems of considerable complexity, the transition to industrial applications is challenging. 
+The workshop on \textbf{a}pplied ve\textbf{r}ification for \textbf{c}ontinuous and \textbf{h}ybrid systems (ARCH) brings together researchers and practitioners to establish a curated set of benchmarks and test them in a friendly competition. 
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Call for Submissions} % (Benchmark proposals, tool presentations, benchmark results, experience reports)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Verification of continuous and hybrid systems is increasing in importance due to new cyber-physical systems that are safety- or operation-critical. This workshop addresses verification techniques for continuous and hybrid systems with a special focus on the transfer from theory to practice. Topics include, but are not limited to
+\begin{packed_itemize}
+\item Proposals for new benchmark problems (not necessarily yet solvable)
+\item Tool presentations
+\item Tool executions and evaluations based on ARCH benchmarks
+\item Experience reports including open issues for industrial success
+\item Reports on results of our friendly competition (separate call)
+\end{packed_itemize}
+%Accepted contributions will be published on the CPS-VO website \url{http://cps-vo.org/group/ARCH}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Submission Guidelines}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Submissions consist of papers of ideally 3-8 pages (pdf) and optional files (e.g. models or traces) submitted through the ARCH'18 EasyChair web site (\url{http://www.easychair.org/conferences/?conf=arch18}). Detailed submission guidelines can be found on \url{https://cps-vo.org/group/ARCH/submissionInstructions}. Submissions receive at least 3 anonymous reviews, including one from industry and one from academia. Details on the evaluation criteria can be found at \url{http://cps-vo.org/group/ARCH/CallForSubmissions}. \\
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection*{Important Dates}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{center}
+	\begin{tabular}{ll}
+	%\hline
+		Submission deadline: & April 06, 2018 \\
+	%\hline
+		Notification: & May 13, 2018 \\
+	%\hline
+		Final Version: & June 13, 2018 \\
+	%\hline
+		Workshop: & July 13, 2018 \\
+	%\hline
+	        Website: & \url{http://cps-vo.org/group/ARCH} 
+	\end{tabular}
+%\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Prize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The paper with the most promising benchmark results receives a prize of $500$ Euros sponsored by Robert Bosch GmbH, Germany. The winner is preselected by the program committee and determined by an audience voting.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Organizers}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tabular}{ll}
+ Program chairs: & \textbf{Matthias Althoff}, Technische Universit\"at M\"unchen, Germany \\
+                 & \textbf{Goran Frehse}, UJF-Verimag, France \\[0.1cm]
+ %Local chair: & \textbf{Sebastian Scherer}, Carnegie Mellon University, USA \\
+ Publicity chair:  & \textbf{Sergiy Bogomolov}, Australian National University, Australia \\
+ Evaluation chair: & \textbf{Taylor T.~Johnson}, Vanderbilt University, USA
+\end{tabular}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Program Committee}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\small
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Academia & Industry \\ \hline
+Stanley Bak (Air Force Research Lab) 	& Ajinkya Bhave (LMS Siemens) \\
+Pieter Collins (Maastricht Univ.) 	& Olivier Bouissou (MathWorks) \\
+Xin Chen (University of Dayton) 	& Alexandre Donze (Decyphir Inc) \\
+Sicun Gao (University of California) 	& Aaron Fifarek (Linquest) \\
+Ian Mitchell (Univ. British Colombia) 	& James Kapinski (Toyota) \\
+Andre Platzer (CarnegieMellon University) 	& Jens Oehlerking (Bosch) \\
+Nacim Ramdani (Universite d'Orleans) 	& Luca Parolini (BMW) \\
+Aditya Zutshi (UC Boulder) 	& Alessandro Pinto (United Technologies) \\
+	& Frank Schiller (Beckhoff Automation) \\
+	& Huafeng Yu (Toyota) \\ \hline
+\end{tabular}
+\end{center}}
+\end{document}
+
+
+
+

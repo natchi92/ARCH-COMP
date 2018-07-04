@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+	<component id="system">
+		<param name="x1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x3" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="d1" type="label" local="false" />
+		<param name="d2" type="label" local="false" />
+		<param name="d3" type="label" local="false" />
+		<param name="d4" type="label" local="false" />
+		<param name="d5" type="label" local="false" />
+		<param name="d6" type="label" local="false" />
+		<param name="d7" type="label" local="false" />
+		<param name="d8" type="label" local="false" />
+		<param name="d9" type="label" local="false" />
+		<param name="d10" type="label" local="false" />
+		<param name="d11" type="label" local="false" />
+		<param name="d12" type="label" local="false" />
+		<param name="d13" type="label" local="false" />
+		<param name="d14" type="label" local="false" />
+		<param name="d15" type="label" local="false" />
+		<param name="d16" type="label" local="false" />
+		<param name="d17" type="label" local="false" />
+		<param name="d18" type="label" local="false" />
+		<param name="d19" type="label" local="false" />
+		<param name="d20" type="label" local="false" />
+		<param name="d21" type="label" local="false" />
+		<param name="d22" type="label" local="false" />
+		<param name="d23" type="label" local="false" />
+		<param name="d24" type="label" local="false" />
+		<param name="d25" type="label" local="false" />
+		<param name="d26" type="label" local="false" />
+		<param name="d27" type="label" local="false" />
+		<param name="d28" type="label" local="false" />
+		<param name="d29" type="label" local="false" />
+		<param name="d30" type="label" local="false" />
+		<param name="d31" type="label" local="false" />
+		<param name="d32" type="label" local="false" />
+		<param name="d33" type="label" local="false" />
+		<param name="d34" type="label" local="false" />
+		<param name="d35" type="label" local="false" />
+		<param name="d36" type="label" local="false" />
+		<param name="d37" type="label" local="false" />
+		<param name="d38" type="label" local="false" />
+		<param name="d39" type="label" local="false" />
+		<param name="d40" type="label" local="false" />
+		<param name="d41" type="label" local="false" />
+		<param name="d42" type="label" local="false" />
+		<param name="d43" type="label" local="false" />
+		<param name="d44" type="label" local="false" />
+		<param name="d45" type="label" local="false" />
+		<param name="d46" type="label" local="false" />
+		<param name="d47" type="label" local="false" />
+		<param name="d48" type="label" local="false" />
+		<param name="d49" type="label" local="false" />
+		<param name="d50" type="label" local="false" />
+		<param name="d51" type="label" local="false" />
+		<param name="d52" type="label" local="false" />
+		<param name="d53" type="label" local="false" />
+		<param name="d54" type="label" local="false" />
+		<param name="d55" type="label" local="false" />
+		<param name="d56" type="label" local="false" />
+		<param name="d57" type="label" local="false" />
+		<param name="d58" type="label" local="false" />
+		<param name="d59" type="label" local="false" />
+		<param name="d60" type="label" local="false" />
+		<param name="d61" type="label" local="false" />
+		<param name="d62" type="label" local="false" />
+		<param name="d63" type="label" local="false" />
+		<param name="d64" type="label" local="false" />
+		<param name="d65" type="label" local="false" />
+		<param name="d66" type="label" local="false" />
+		<param name="d67" type="label" local="false" />
+		<param name="d68" type="label" local="false" />
+		<param name="d69" type="label" local="false" />
+		<param name="d70" type="label" local="false" />
+		<param name="d71" type="label" local="false" />
+		<param name="d72" type="label" local="false" />
+		<param name="d73" type="label" local="false" />
+		<param name="d74" type="label" local="false" />
+		<param name="d75" type="label" local="false" />
+		<param name="d76" type="label" local="false" />
+		<param name="d77" type="label" local="false" />
+		<param name="d78" type="label" local="false" />
+		<param name="d79" type="label" local="false" />
+		<param name="d80" type="label" local="false" />
+		<param name="d81" type="label" local="false" />
+		<param name="d82" type="label" local="false" />
+		<param name="d83" type="label" local="false" />
+		<param name="d84" type="label" local="false" />
+		<param name="d85" type="label" local="false" />
+		<param name="d86" type="label" local="false" />
+		<param name="d87" type="label" local="false" />
+		<param name="d88" type="label" local="false" />
+		<param name="d89" type="label" local="false" />
+		<param name="d90" type="label" local="false" />
+		<param name="d91" type="label" local="false" />
+		<param name="d92" type="label" local="false" />
+		<param name="d93" type="label" local="false" />
+		<param name="d94" type="label" local="false" />
+		<param name="d95" type="label" local="false" />
+		<param name="d96" type="label" local="false" />
+		<param name="d97" type="label" local="false" />
+		<param name="d98" type="label" local="false" />
+		<param name="d99" type="label" local="false" />
+		<param name="d100" type="label" local="false" />
+		<param name="d101" type="label" local="false" />
+		<param name="d102" type="label" local="false" />
+		<param name="d103" type="label" local="false" />
+		<param name="d104" type="label" local="false" />
+		<param name="d105" type="label" local="false" />
+		<param name="d106" type="label" local="false" />
+		<param name="d107" type="label" local="false" />
+		<param name="d108" type="label" local="false" />
+		<location id="1" name="L000">
+			<invariant>0&lt;=x1&lt;=1 &amp; 0&lt;=x2&lt;=1 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==0.8 &amp; x2'==1.1 &amp; x3'==0.6</flow>
+		</location>
+		<location id="2" name="L001">
+			<invariant>1&lt;=x1&lt;=2 &amp; 0&lt;=x2&lt;=1 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.6 &amp; x2'==0.9 &amp; x3'==0.7</flow>
+		</location>
+		<location id="3" name="L002">
+			<invariant>2&lt;=x1&lt;=3 &amp; 0&lt;=x2&lt;=1 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.2 &amp; x2'==1.3 &amp; x3'==0.8</flow>
+		</location>
+		<location id="4" name="L010">
+			<invariant>0&lt;=x1&lt;=1 &amp; 1&lt;=x2&lt;=2 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==0.8 &amp; x2'==1.1 &amp; x3'==0.6</flow>
+		</location>
+		<location id="5" name="L011">
+			<invariant>1&lt;=x1&lt;=2 &amp; 1&lt;=x2&lt;=2 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.6 &amp; x2'==0.9 &amp; x3'==0.7</flow>
+		</location>
+		<location id="6" name="L012">
+			<invariant>2&lt;=x1&lt;=3 &amp; 1&lt;=x2&lt;=2 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.2 &amp; x2'==1.3 &amp; x3'==0.8</flow>
+		</location>
+		<location id="7" name="L020">
+			<invariant>0&lt;=x1&lt;=1 &amp; 2&lt;=x2&lt;=3 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==0.8 &amp; x2'==1.1 &amp; x3'==0.6</flow>
+		</location>
+		<location id="8" name="L021">
+			<invariant>1&lt;=x1&lt;=2 &amp; 2&lt;=x2&lt;=3 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.6 &amp; x2'==0.9 &amp; x3'==0.7</flow>
+		</location>
+		<location id="9" name="L022">
+			<invariant>2&lt;=x1&lt;=3 &amp; 2&lt;=x2&lt;=3 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.2 &amp; x2'==1.3 &amp; x3'==0.8</flow>
+		</location>
+		<location id="10" name="L100">
+			<invariant>0&lt;=x1&lt;=1 &amp; 0&lt;=x2&lt;=1 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==0.8 &amp; x2'==1.1 &amp; x3'==0.6</flow>
+		</location>
+		<location id="11" name="L101">
+			<invariant>1&lt;=x1&lt;=2 &amp; 0&lt;=x2&lt;=1 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.6 &amp; x2'==0.9 &amp; x3'==0.7</flow>
+		</location>
+		<location id="12" name="L102">
+			<invariant>2&lt;=x1&lt;=3 &amp; 0&lt;=x2&lt;=1 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.2 &amp; x2'==1.3 &amp; x3'==0.8</flow>
+		</location>
+		<location id="13" name="L110">
+			<invariant>0&lt;=x1&lt;=1 &amp; 1&lt;=x2&lt;=2 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==0.8 &amp; x2'==1.1 &amp; x3'==0.6</flow>
+		</location>
+		<location id="14" name="L111">
+			<invariant>1&lt;=x1&lt;=2 &amp; 1&lt;=x2&lt;=2 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.6 &amp; x2'==0.9 &amp; x3'==0.7</flow>
+		</location>
+		<location id="15" name="L112">
+			<invariant>2&lt;=x1&lt;=3 &amp; 1&lt;=x2&lt;=2 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.2 &amp; x2'==1.3 &amp; x3'==0.8</flow>
+		</location>
+		<location id="16" name="L120">
+			<invariant>0&lt;=x1&lt;=1 &amp; 2&lt;=x2&lt;=3 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==0.8 &amp; x2'==1.1 &amp; x3'==0.6</flow>
+		</location>
+		<location id="17" name="L121">
+			<invariant>1&lt;=x1&lt;=2 &amp; 2&lt;=x2&lt;=3 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.6 &amp; x2'==0.9 &amp; x3'==0.7</flow>
+		</location>
+		<location id="18" name="L122">
+			<invariant>2&lt;=x1&lt;=3 &amp; 2&lt;=x2&lt;=3 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.2 &amp; x2'==1.3 &amp; x3'==0.8</flow>
+		</location>
+		<location id="19" name="L200">
+			<invariant>0&lt;=x1&lt;=1 &amp; 0&lt;=x2&lt;=1 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==0.8 &amp; x2'==1.1 &amp; x3'==0.6</flow>
+		</location>
+		<location id="20" name="L201">
+			<invariant>1&lt;=x1&lt;=2 &amp; 0&lt;=x2&lt;=1 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.6 &amp; x2'==0.9 &amp; x3'==0.7</flow>
+		</location>
+		<location id="21" name="L202">
+			<invariant>2&lt;=x1&lt;=3 &amp; 0&lt;=x2&lt;=1 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.2 &amp; x2'==1.3 &amp; x3'==0.8</flow>
+		</location>
+		<location id="22" name="L210">
+			<invariant>0&lt;=x1&lt;=1 &amp; 1&lt;=x2&lt;=2 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==0.8 &amp; x2'==1.1 &amp; x3'==0.6</flow>
+		</location>
+		<location id="23" name="L211">
+			<invariant>1&lt;=x1&lt;=2 &amp; 1&lt;=x2&lt;=2 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.6 &amp; x2'==0.9 &amp; x3'==0.7</flow>
+		</location>
+		<location id="24" name="L212">
+			<invariant>2&lt;=x1&lt;=3 &amp; 1&lt;=x2&lt;=2 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.2 &amp; x2'==1.3 &amp; x3'==0.8</flow>
+		</location>
+		<location id="25" name="L220">
+			<invariant>0&lt;=x1&lt;=1 &amp; 2&lt;=x2&lt;=3 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==0.8 &amp; x2'==1.1 &amp; x3'==0.6</flow>
+		</location>
+		<location id="26" name="L221">
+			<invariant>1&lt;=x1&lt;=2 &amp; 2&lt;=x2&lt;=3 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.6 &amp; x2'==0.9 &amp; x3'==0.7</flow>
+		</location>
+		<location id="27" name="L222">
+			<invariant>2&lt;=x1&lt;=3 &amp; 2&lt;=x2&lt;=3 &amp; 0&lt;=x3&lt;=1</invariant>
+			<flow>x1'==1.2 &amp; x2'==1.3 &amp; x3'==0.8</flow>
+		</location>
+		<transition source="1" target="2">
+			<label>d1</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="1" target="4">
+			<label>d2</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="1" target="10">
+			<label>d3</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="2" target="1">
+			<label>d4</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="2" target="3">
+			<label>d5</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="2" target="5">
+			<label>d6</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="2" target="11">
+			<label>d7</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="3" target="2">
+			<label>d8</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="3" target="6">
+			<label>d9</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="3" target="12">
+			<label>d10</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="4" target="5">
+			<label>d11</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="4" target="1">
+			<label>d12</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="4" target="7">
+			<label>d13</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="4" target="13">
+			<label>d14</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="5" target="4">
+			<label>d15</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="5" target="6">
+			<label>d16</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="5" target="2">
+			<label>d17</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="5" target="8">
+			<label>d18</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="5" target="14">
+			<label>d19</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="6" target="5">
+			<label>d20</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="6" target="3">
+			<label>d21</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="6" target="9">
+			<label>d22</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="6" target="15">
+			<label>d23</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="7" target="8">
+			<label>d24</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="7" target="4">
+			<label>d25</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="7" target="16">
+			<label>d26</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="8" target="7">
+			<label>d27</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="8" target="9">
+			<label>d28</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="8" target="5">
+			<label>d29</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="8" target="17">
+			<label>d30</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="9" target="8">
+			<label>d31</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="9" target="6">
+			<label>d32</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="9" target="18">
+			<label>d33</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="10" target="11">
+			<label>d34</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="10" target="13">
+			<label>d35</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="10" target="1">
+			<label>d36</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="10" target="19">
+			<label>d37</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="11" target="10">
+			<label>d38</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="11" target="12">
+			<label>d39</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="11" target="14">
+			<label>d40</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="11" target="2">
+			<label>d41</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="11" target="20">
+			<label>d42</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="12" target="11">
+			<label>d43</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="12" target="15">
+			<label>d44</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="12" target="3">
+			<label>d45</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="12" target="21">
+			<label>d46</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="13" target="14">
+			<label>d47</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="13" target="10">
+			<label>d48</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="13" target="16">
+			<label>d49</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="13" target="4">
+			<label>d50</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="13" target="22">
+			<label>d51</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="14" target="13">
+			<label>d52</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="14" target="15">
+			<label>d53</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="14" target="11">
+			<label>d54</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="14" target="17">
+			<label>d55</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="14" target="5">
+			<label>d56</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="14" target="23">
+			<label>d57</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="15" target="14">
+			<label>d58</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="15" target="12">
+			<label>d59</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="15" target="18">
+			<label>d60</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="15" target="6">
+			<label>d61</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="15" target="24">
+			<label>d62</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="16" target="17">
+			<label>d63</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="16" target="13">
+			<label>d64</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="16" target="7">
+			<label>d65</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="16" target="25">
+			<label>d66</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="17" target="16">
+			<label>d67</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="17" target="18">
+			<label>d68</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="17" target="14">
+			<label>d69</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="17" target="8">
+			<label>d70</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="17" target="26">
+			<label>d71</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="18" target="17">
+			<label>d72</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="18" target="15">
+			<label>d73</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="18" target="9">
+			<label>d74</label>
+			<guard>x3==1</guard>
+		</transition>
+		<transition source="18" target="27">
+			<label>d75</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="19" target="20">
+			<label>d76</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="19" target="22">
+			<label>d77</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="19" target="10">
+			<label>d78</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="20" target="19">
+			<label>d79</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="20" target="21">
+			<label>d80</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="20" target="23">
+			<label>d81</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="20" target="11">
+			<label>d82</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="21" target="20">
+			<label>d83</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="21" target="24">
+			<label>d84</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="21" target="12">
+			<label>d85</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="22" target="23">
+			<label>d86</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="22" target="19">
+			<label>d87</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="22" target="25">
+			<label>d88</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="22" target="13">
+			<label>d89</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="23" target="22">
+			<label>d90</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="23" target="24">
+			<label>d91</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="23" target="20">
+			<label>d92</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="23" target="26">
+			<label>d93</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="23" target="14">
+			<label>d94</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="24" target="23">
+			<label>d95</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="24" target="21">
+			<label>d96</label>
+			<guard>x2==1</guard>
+		</transition>
+		<transition source="24" target="27">
+			<label>d97</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="24" target="15">
+			<label>d98</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="25" target="26">
+			<label>d99</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="25" target="22">
+			<label>d100</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="25" target="16">
+			<label>d101</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="26" target="25">
+			<label>d102</label>
+			<guard>x1==1</guard>
+		</transition>
+		<transition source="26" target="27">
+			<label>d103</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="26" target="23">
+			<label>d104</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="26" target="17">
+			<label>d105</label>
+			<guard>x3==2</guard>
+		</transition>
+		<transition source="27" target="26">
+			<label>d106</label>
+			<guard>x1==2</guard>
+		</transition>
+		<transition source="27" target="24">
+			<label>d107</label>
+			<guard>x2==2</guard>
+		</transition>
+		<transition source="27" target="18">
+			<label>d108</label>
+			<guard>x3==2</guard>
+		</transition>
+	</component>
+</sspaceex>

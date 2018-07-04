@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+	<component id="motorcar_template">
+		<param name="x_1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x_2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x_3" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x_4" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x_5" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="e1" type="label" local="false" />
+		<param name="e2" type="label" local="false" />
+		<param name="e3" type="label" local="false" />
+		<param name="e4" type="label" local="false" />
+		<param name="e5" type="label" local="false" />
+		<param name="e6" type="label" local="false" />
+		<param name="e7" type="label" local="false" />
+		<param name="e8" type="label" local="false" />
+		<param name="e9" type="label" local="false" />
+		<param name="e10" type="label" local="false" />
+		<param name="e11" type="label" local="false" />
+		<param name="e12" type="label" local="false" />
+		<location id="1" name="v1">
+			<invariant>x_1-x_2&gt;=2 &amp; x_1-x_2&lt;=10 &amp; x_2-x_3&gt;=2 &amp; x_2-x_3&lt;=10 &amp; x_3-x_4&gt;=2 &amp; x_3-x_4&lt;=10 &amp; x_4-x_5&gt;=2 &amp; x_4-x_5&lt;=10</invariant>
+			<flow>x_1'==8 &amp; x_2'==8.5 &amp; x_3'==9 &amp; x_4'==9.5 &amp; x_5'==10</flow>
+		</location>
+		<location id="2" name="v2">
+			<invariant>x_1-x_2&gt;=0 &amp; x_1-x_2&lt;=10 &amp; x_2-x_3&gt;=0 &amp; x_2-x_3&lt;=10 &amp; x_3-x_4&gt;=0 &amp; x_3-x_4&lt;=10 &amp; x_4-x_5&gt;=0 &amp; x_4-x_5&lt;=10</invariant>
+			<flow>x_1'==12 &amp; x_2'==10 &amp; x_3'==8 &amp; x_4'==9 &amp; x_5'==10</flow>
+		</location>
+		<location id="3" name="v3">
+			<invariant>x_1-x_2&gt;=0 &amp; x_1-x_2&lt;=10 &amp; x_2-x_3&gt;=0 &amp; x_2-x_3&lt;=10 &amp; x_3-x_4&gt;=0 &amp; x_3-x_4&lt;=10 &amp; x_4-x_5&gt;=0 &amp; x_4-x_5&lt;=10</invariant>
+			<flow>x_1'==12 &amp; x_2'==12 &amp; x_3'==10 &amp; x_4'==8.5 &amp; x_5'==9.5</flow>
+		</location>
+		<location id="4" name="v4">
+			<invariant>x_1-x_2&gt;=0 &amp; x_1-x_2&lt;=10 &amp; x_2-x_3&gt;=0 &amp; x_2-x_3&lt;=10 &amp; x_3-x_4&gt;=0 &amp; x_3-x_4&lt;=10 &amp; x_4-x_5&gt;=0 &amp; x_4-x_5&lt;=10</invariant>
+			<flow>x_1'==12 &amp; x_2'==12 &amp; x_3'==12 &amp; x_4'==10 &amp; x_5'==9</flow>
+		</location>
+		<location id="5" name="v5">
+			<invariant>x_1-x_2&gt;=0 &amp; x_1-x_2&lt;=10 &amp; x_2-x_3&gt;=0 &amp; x_2-x_3&lt;=10 &amp; x_3-x_4&gt;=0 &amp; x_3-x_4&lt;=10 &amp; x_4-x_5&gt;=0 &amp; x_4-x_5&lt;=10</invariant>
+			<flow>x_1'==12 &amp; x_2'==12 &amp; x_3'==12 &amp; x_4'==12 &amp; x_5'==10</flow>
+		</location>
+		<location id="6" name="v6">
+			<flow>x_1'==0 &amp; x_2'==0 &amp; x_3'==0 &amp; x_4'==0 &amp; x_5'==0</flow>
+		</location>
+		<transition source="1" target="2">
+			<label>e1</label>
+			<guard>x_1-x_2&lt;=4</guard>
+		</transition>
+		<transition source="2" target="1">
+			<label>e2</label>
+			<guard>x_1-x_2&gt;=4</guard>
+		</transition>
+		<transition source="2" target="6">
+			<label>e3</label>
+			<guard>x_1-x_2&lt;=1</guard>
+		</transition>
+		<transition source="1" target="3">
+			<label>e4</label>
+			<guard>x_2-x_3&lt;=4</guard>
+		</transition>
+		<transition source="3" target="1">
+			<label>e5</label>
+			<guard>x_2-x_3&gt;=4</guard>
+		</transition>
+		<transition source="3" target="6">
+			<label>e6</label>
+			<guard>x_2-x_3&lt;=1</guard>
+		</transition>
+		<transition source="1" target="4">
+			<label>e7</label>
+			<guard>x_3-x_4&lt;=4</guard>
+		</transition>
+		<transition source="4" target="1">
+			<label>e8</label>
+			<guard>x_3-x_4&gt;=4</guard>
+		</transition>
+		<transition source="4" target="6">
+			<label>e9</label>
+			<guard>x_3-x_4&lt;=1</guard>
+		</transition>
+		<transition source="1" target="5">
+			<label>e10</label>
+			<guard>x_4-x_5&lt;=4</guard>
+		</transition>
+		<transition source="5" target="1">
+			<label>e11</label>
+			<guard>x_4-x_5&gt;=4</guard>
+		</transition>
+		<transition source="5" target="6">
+			<label>e12</label>
+			<guard>x_4-x_5&lt;=1</guard>
+		</transition>
+	</component>
+	<component id="system">
+		<param name="x_1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x_2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x_3" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x_4" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="x_5" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="e1" type="label" local="false" />
+		<param name="e2" type="label" local="false" />
+		<param name="e3" type="label" local="false" />
+		<param name="e4" type="label" local="false" />
+		<param name="e5" type="label" local="false" />
+		<param name="e6" type="label" local="false" />
+		<param name="e7" type="label" local="false" />
+		<param name="e8" type="label" local="false" />
+		<param name="e9" type="label" local="false" />
+		<param name="e10" type="label" local="false" />
+		<param name="e11" type="label" local="false" />
+		<param name="e12" type="label" local="false" />
+		<bind component="motorcar_template" as="motorcar_5">
+			<map key="x_1">x_1</map>
+			<map key="x_2">x_2</map>
+			<map key="x_3">x_3</map>
+			<map key="x_4">x_4</map>
+			<map key="x_5">x_5</map>
+			<map key="e1">e1</map>
+			<map key="e2">e2</map>
+			<map key="e3">e3</map>
+			<map key="e4">e4</map>
+			<map key="e5">e5</map>
+			<map key="e6">e6</map>
+			<map key="e7">e7</map>
+			<map key="e8">e8</map>
+			<map key="e9">e9</map>
+			<map key="e10">e10</map>
+			<map key="e11">e11</map>
+			<map key="e12">e12</map>
+		</bind>
+	</component>
+</sspaceex>

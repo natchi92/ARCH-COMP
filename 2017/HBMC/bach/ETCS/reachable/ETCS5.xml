@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+	<component id="train_template">
+		<param name="x" type="real" local="true" d1="1" d2="1" dynamics="any" />
+		<param name="v" type="real" local="true" d1="1" d2="1" dynamics="any" />
+		<param name="time" type="real" local="true" d1="1" d2="1" dynamics="any" />
+		<param name="MA" type="label" local="false" />
+		<param name="tau" type="label" local="false" />
+		<location id="1" name="s0_0">
+			<invariant>v&gt;=0 &amp; v&lt;=10 &amp; x=0 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=0 &amp; x'&lt;=10</flow>
+		</location>
+		<location id="2" name="s0_1">
+			<invariant>v&gt;=10 &amp; v&lt;=20 &amp; x=0 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=10 &amp; x'&lt;=20</flow>
+		</location>
+		<location id="3" name="s0_2">
+			<invariant>v&gt;=20 &amp; v&lt;=30 &amp; x=0 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=20 &amp; x'&lt;=30</flow>
+		</location>
+		<location id="4" name="s0_3">
+			<invariant>v&gt;=30 &amp; v&lt;=40 &amp; x=0 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=30 &amp; x'&lt;=40</flow>
+		</location>
+		<location id="5" name="s0_4">
+			<invariant>v&gt;=40 &amp; v&lt;=50 &amp; x=0 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=40 &amp; x'&lt;=50</flow>
+		</location>
+		<location id="6" name="s0_5">
+			<invariant>v&gt;=50 &amp; v&lt;=60 &amp; x=0 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=50 &amp; x'&lt;=60</flow>
+		</location>
+		<location id="7" name="s0_6">
+			<invariant>v&gt;=60 &amp; v&lt;=70 &amp; x=0 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=60 &amp; x'&lt;=70</flow>
+		</location>
+		<location id="8" name="s0_7">
+			<invariant>v&gt;=70 &amp; v&lt;=80 &amp; x=0 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=70 &amp; x'&lt;=80</flow>
+		</location>
+		<location id="9" name="s0_8">
+			<invariant>v&gt;=80 &amp; v&lt;=90 &amp; x=0 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=80 &amp; x'&lt;=90</flow>
+		</location>
+		<location id="10" name="s0_9">
+			<invariant>v&gt;=90 &amp; v&lt;=100 &amp; x=0 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=90 &amp; x'&lt;=100</flow>
+		</location>
+		<location id="11" name="s0_10">
+			<invariant>v&gt;=100 &amp; v&lt;=110 &amp; x=0 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=100 &amp; x'&lt;=110</flow>
+		</location>
+		<location id="12" name="s1_0">
+			<invariant>v&gt;=0 &amp; v&lt;=10 &amp; x&gt;=0 &amp; x&lt;=100</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=0 &amp; x'&lt;=10</flow>
+		</location>
+		<location id="13" name="s1_1">
+			<invariant>v&gt;=10 &amp; v&lt;=20 &amp; x&gt;=0 &amp; x&lt;=100</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=10 &amp; x'&lt;=20</flow>
+		</location>
+		<location id="14" name="s1_2">
+			<invariant>v&gt;=20 &amp; v&lt;=30 &amp; x&gt;=0 &amp; x&lt;=100</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=20 &amp; x'&lt;=30</flow>
+		</location>
+		<location id="15" name="s1_3">
+			<invariant>v&gt;=30 &amp; v&lt;=40 &amp; x&gt;=0 &amp; x&lt;=100</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=30 &amp; x'&lt;=40</flow>
+		</location>
+		<location id="16" name="s1_4">
+			<invariant>v&gt;=40 &amp; v&lt;=50 &amp; x&gt;=0 &amp; x&lt;=100</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=40 &amp; x'&lt;=50</flow>
+		</location>
+		<location id="17" name="s1_5">
+			<invariant>v&gt;=50 &amp; v&lt;=60 &amp; x&gt;=0 &amp; x&lt;=100</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=50 &amp; x'&lt;=60</flow>
+		</location>
+		<location id="18" name="s1_6">
+			<invariant>v&gt;=60 &amp; v&lt;=70 &amp; x&gt;=0 &amp; x&lt;=100</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=60 &amp; x'&lt;=70</flow>
+		</location>
+		<location id="19" name="s1_7">
+			<invariant>v&gt;=70 &amp; v&lt;=80 &amp; x&gt;=0 &amp; x&lt;=100</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=70 &amp; x'&lt;=80</flow>
+		</location>
+		<location id="20" name="s1_8">
+			<invariant>v&gt;=80 &amp; v&lt;=90 &amp; x&gt;=0 &amp; x&lt;=100</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=80 &amp; x'&lt;=90</flow>
+		</location>
+		<location id="21" name="s1_9">
+			<invariant>v&gt;=90 &amp; v&lt;=100 &amp; x&gt;=0 &amp; x&lt;=100</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=90 &amp; x'&lt;=100</flow>
+		</location>
+		<location id="22" name="s1_10">
+			<invariant>v&gt;=100 &amp; v&lt;=110 &amp; x&gt;=0 &amp; x&lt;=100</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=100 &amp; x'&lt;=110</flow>
+		</location>
+		<location id="23" name="s2_0">
+			<invariant>v&gt;=0 &amp; v&lt;=10 &amp; x&gt;=100 &amp; x&lt;=200</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=0 &amp; x'&lt;=10</flow>
+		</location>
+		<location id="24" name="s2_1">
+			<invariant>v&gt;=10 &amp; v&lt;=20 &amp; x&gt;=100 &amp; x&lt;=200</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=10 &amp; x'&lt;=20</flow>
+		</location>
+		<location id="25" name="s2_2">
+			<invariant>v&gt;=20 &amp; v&lt;=30 &amp; x&gt;=100 &amp; x&lt;=200</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=20 &amp; x'&lt;=30</flow>
+		</location>
+		<location id="26" name="s2_3">
+			<invariant>v&gt;=30 &amp; v&lt;=40 &amp; x&gt;=100 &amp; x&lt;=200</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=30 &amp; x'&lt;=40</flow>
+		</location>
+		<location id="27" name="s2_4">
+			<invariant>v&gt;=40 &amp; v&lt;=50 &amp; x&gt;=100 &amp; x&lt;=200</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=40 &amp; x'&lt;=50</flow>
+		</location>
+		<location id="28" name="s2_5">
+			<invariant>v&gt;=50 &amp; v&lt;=60 &amp; x&gt;=100 &amp; x&lt;=200</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=50 &amp; x'&lt;=60</flow>
+		</location>
+		<location id="29" name="s2_6">
+			<invariant>v&gt;=60 &amp; v&lt;=70 &amp; x&gt;=100 &amp; x&lt;=200</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=60 &amp; x'&lt;=70</flow>
+		</location>
+		<location id="30" name="s2_7">
+			<invariant>v&gt;=70 &amp; v&lt;=80 &amp; x&gt;=100 &amp; x&lt;=200</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=70 &amp; x'&lt;=80</flow>
+		</location>
+		<location id="31" name="s2_8">
+			<invariant>v&gt;=80 &amp; v&lt;=90 &amp; x&gt;=100 &amp; x&lt;=200</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=80 &amp; x'&lt;=90</flow>
+		</location>
+		<location id="32" name="s2_9">
+			<invariant>v&gt;=90 &amp; v&lt;=100 &amp; x&gt;=100 &amp; x&lt;=200</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=90 &amp; x'&lt;=100</flow>
+		</location>
+		<location id="33" name="s2_10">
+			<invariant>v&gt;=100 &amp; v&lt;=110 &amp; x&gt;=100 &amp; x&lt;=200</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=100 &amp; x'&lt;=110</flow>
+		</location>
+		<location id="34" name="s3_0">
+			<invariant>v&gt;=0 &amp; v&lt;=10 &amp; x=200 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=0 &amp; x'&lt;=10</flow>
+		</location>
+		<location id="35" name="s3_1">
+			<invariant>v&gt;=10 &amp; v&lt;=20 &amp; x=200 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=10 &amp; x'&lt;=20</flow>
+		</location>
+		<location id="36" name="s3_2">
+			<invariant>v&gt;=20 &amp; v&lt;=30 &amp; x=200 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=20 &amp; x'&lt;=30</flow>
+		</location>
+		<location id="37" name="s3_3">
+			<invariant>v&gt;=30 &amp; v&lt;=40 &amp; x=200 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=30 &amp; x'&lt;=40</flow>
+		</location>
+		<location id="38" name="s3_4">
+			<invariant>v&gt;=40 &amp; v&lt;=50 &amp; x=200 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=40 &amp; x'&lt;=50</flow>
+		</location>
+		<location id="39" name="s3_5">
+			<invariant>v&gt;=50 &amp; v&lt;=60 &amp; x=200 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=50 &amp; x'&lt;=60</flow>
+		</location>
+		<location id="40" name="s3_6">
+			<invariant>v&gt;=60 &amp; v&lt;=70 &amp; x=200 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=60 &amp; x'&lt;=70</flow>
+		</location>
+		<location id="41" name="s3_7">
+			<invariant>v&gt;=70 &amp; v&lt;=80 &amp; x=200 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=70 &amp; x'&lt;=80</flow>
+		</location>
+		<location id="42" name="s3_8">
+			<invariant>v&gt;=80 &amp; v&lt;=90 &amp; x=200 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=80 &amp; x'&lt;=90</flow>
+		</location>
+		<location id="43" name="s3_9">
+			<invariant>v&gt;=90 &amp; v&lt;=100 &amp; x=200 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=90 &amp; x'&lt;=100</flow>
+		</location>
+		<location id="44" name="s3_10">
+			<invariant>v&gt;=100 &amp; v&lt;=110 &amp; x=200 &amp; v=0</invariant>
+			<flow>time'==1 &amp; v'&gt;=-120 &amp; v'&lt;=120 &amp; x'&gt;=100 &amp; x'&lt;=110</flow>
+		</location>
+		<transition source="1" target="12">
+			<label>MA</label>
+			<guard>x==0</guard>
+		</transition>
+		<transition source="12" target="23">
+			<label>MA</label>
+			<guard>x==100</guard>
+		</transition>
+		<transition source="23" target="34">
+			<label>MA</label>
+			<guard>x==200</guard>
+		</transition>
+		<transition source="2" target="13">
+			<label>MA</label>
+			<guard>x==0</guard>
+		</transition>
+		<transition source="13" target="24">
+			<label>MA</label>
+			<guard>x==100</guard>
+		</transition>
+		<transition source="24" target="35">
+			<label>MA</label>
+			<guard>x==200</guard>
+		</transition>
+		<transition source="3" target="14">
+			<label>MA</label>
+			<guard>x==0</guard>
+		</transition>
+		<transition source="14" target="25">
+			<label>MA</label>
+			<guard>x==100</guard>
+		</transition>
+		<transition source="25" target="36">
+			<label>MA</label>
+			<guard>x==200</guard>
+		</transition>
+		<transition source="4" target="15">
+			<label>MA</label>
+			<guard>x==0</guard>
+		</transition>
+		<transition source="15" target="26">
+			<label>MA</label>
+			<guard>x==100</guard>
+		</transition>
+		<transition source="26" target="37">
+			<label>MA</label>
+			<guard>x==200</guard>
+		</transition>
+		<transition source="5" target="16">
+			<label>MA</label>
+			<guard>x==0</guard>
+		</transition>
+		<transition source="16" target="27">
+			<label>MA</label>
+			<guard>x==100</guard>
+		</transition>
+		<transition source="27" target="38">
+			<label>MA</label>
+			<guard>x==200</guard>
+		</transition>
+		<transition source="6" target="17">
+			<label>MA</label>
+			<guard>x==0</guard>
+		</transition>
+		<transition source="17" target="28">
+			<label>MA</label>
+			<guard>x==100</guard>
+		</transition>
+		<transition source="28" target="39">
+			<label>MA</label>
+			<guard>x==200</guard>
+		</transition>
+		<transition source="7" target="18">
+			<label>MA</label>
+			<guard>x==0</guard>
+		</transition>
+		<transition source="18" target="29">
+			<label>MA</label>
+			<guard>x==100</guard>
+		</transition>
+		<transition source="29" target="40">
+			<label>MA</label>
+			<guard>x==200</guard>
+		</transition>
+		<transition source="8" target="19">
+			<label>MA</label>
+			<guard>x==0</guard>
+		</transition>
+		<transition source="19" target="30">
+			<label>MA</label>
+			<guard>x==100</guard>
+		</transition>
+		<transition source="30" target="41">
+			<label>MA</label>
+			<guard>x==200</guard>
+		</transition>
+		<transition source="9" target="20">
+			<label>MA</label>
+			<guard>x==0</guard>
+		</transition>
+		<transition source="20" target="31">
+			<label>MA</label>
+			<guard>x==100</guard>
+		</transition>
+		<transition source="31" target="42">
+			<label>MA</label>
+			<guard>x==200</guard>
+		</transition>
+		<transition source="10" target="21">
+			<label>MA</label>
+			<guard>x==0</guard>
+		</transition>
+		<transition source="21" target="32">
+			<label>MA</label>
+			<guard>x==100</guard>
+		</transition>
+		<transition source="32" target="43">
+			<label>MA</label>
+			<guard>x==200</guard>
+		</transition>
+		<transition source="11" target="22">
+			<label>MA</label>
+			<guard>x==0</guard>
+		</transition>
+		<transition source="22" target="33">
+			<label>MA</label>
+			<guard>x==100</guard>
+		</transition>
+		<transition source="33" target="44">
+			<label>MA</label>
+			<guard>x==200</guard>
+		</transition>
+		<transition source="1" target="2">
+			<label>tau</label>
+		</transition>
+		<transition source="2" target="3">
+			<label>tau</label>
+		</transition>
+		<transition source="3" target="4">
+			<label>tau</label>
+		</transition>
+		<transition source="4" target="5">
+			<label>tau</label>
+		</transition>
+		<transition source="5" target="6">
+			<label>tau</label>
+		</transition>
+		<transition source="6" target="7">
+			<label>tau</label>
+		</transition>
+		<transition source="7" target="8">
+			<label>tau</label>
+		</transition>
+		<transition source="8" target="9">
+			<label>tau</label>
+		</transition>
+		<transition source="9" target="10">
+			<label>tau</label>
+		</transition>
+		<transition source="10" target="11">
+			<label>tau</label>
+		</transition>
+		<transition source="2" target="1">
+			<label>tau</label>
+		</transition>
+		<transition source="3" target="2">
+			<label>tau</label>
+		</transition>
+		<transition source="4" target="3">
+			<label>tau</label>
+		</transition>
+		<transition source="5" target="4">
+			<label>tau</label>
+		</transition>
+		<transition source="6" target="5">
+			<label>tau</label>
+		</transition>
+		<transition source="7" target="6">
+			<label>tau</label>
+		</transition>
+		<transition source="8" target="7">
+			<label>tau</label>
+		</transition>
+		<transition source="9" target="8">
+			<label>tau</label>
+		</transition>
+		<transition source="10" target="9">
+			<label>tau</label>
+		</transition>
+		<transition source="11" target="10">
+			<label>tau</label>
+		</transition>
+		<transition source="12" target="13">
+			<label>tau</label>
+		</transition>
+		<transition source="13" target="14">
+			<label>tau</label>
+		</transition>
+		<transition source="14" target="15">
+			<label>tau</label>
+		</transition>
+		<transition source="15" target="16">
+			<label>tau</label>
+		</transition>
+		<transition source="16" target="17">
+			<label>tau</label>
+		</transition>
+		<transition source="17" target="18">
+			<label>tau</label>
+		</transition>
+		<transition source="18" target="19">
+			<label>tau</label>
+		</transition>
+		<transition source="19" target="20">
+			<label>tau</label>
+		</transition>
+		<transition source="20" target="21">
+			<label>tau</label>
+		</transition>
+		<transition source="21" target="22">
+			<label>tau</label>
+		</transition>
+		<transition source="13" target="12">
+			<label>tau</label>
+		</transition>
+		<transition source="14" target="13">
+			<label>tau</label>
+		</transition>
+		<transition source="15" target="14">
+			<label>tau</label>
+		</transition>
+		<transition source="16" target="15">
+			<label>tau</label>
+		</transition>
+		<transition source="17" target="16">
+			<label>tau</label>
+		</transition>
+		<transition source="18" target="17">
+			<label>tau</label>
+		</transition>
+		<transition source="19" target="18">
+			<label>tau</label>
+		</transition>
+		<transition source="20" target="19">
+			<label>tau</label>
+		</transition>
+		<transition source="21" target="20">
+			<label>tau</label>
+		</transition>
+		<transition source="22" target="21">
+			<label>tau</label>
+		</transition>
+		<transition source="23" target="24">
+			<label>tau</label>
+		</transition>
+		<transition source="24" target="25">
+			<label>tau</label>
+		</transition>
+		<transition source="25" target="26">
+			<label>tau</label>
+		</transition>
+		<transition source="26" target="27">
+			<label>tau</label>
+		</transition>
+		<transition source="27" target="28">
+			<label>tau</label>
+		</transition>
+		<transition source="28" target="29">
+			<label>tau</label>
+		</transition>
+		<transition source="29" target="30">
+			<label>tau</label>
+		</transition>
+		<transition source="30" target="31">
+			<label>tau</label>
+		</transition>
+		<transition source="31" target="32">
+			<label>tau</label>
+		</transition>
+		<transition source="32" target="33">
+			<label>tau</label>
+		</transition>
+		<transition source="24" target="23">
+			<label>tau</label>
+		</transition>
+		<transition source="25" target="24">
+			<label>tau</label>
+		</transition>
+		<transition source="26" target="25">
+			<label>tau</label>
+		</transition>
+		<transition source="27" target="26">
+			<label>tau</label>
+		</transition>
+		<transition source="28" target="27">
+			<label>tau</label>
+		</transition>
+		<transition source="29" target="28">
+			<label>tau</label>
+		</transition>
+		<transition source="30" target="29">
+			<label>tau</label>
+		</transition>
+		<transition source="31" target="30">
+			<label>tau</label>
+		</transition>
+		<transition source="32" target="31">
+			<label>tau</label>
+		</transition>
+		<transition source="33" target="32">
+			<label>tau</label>
+		</transition>
+		<transition source="34" target="35">
+			<label>tau</label>
+		</transition>
+		<transition source="35" target="36">
+			<label>tau</label>
+		</transition>
+		<transition source="36" target="37">
+			<label>tau</label>
+		</transition>
+		<transition source="37" target="38">
+			<label>tau</label>
+		</transition>
+		<transition source="38" target="39">
+			<label>tau</label>
+		</transition>
+		<transition source="39" target="40">
+			<label>tau</label>
+		</transition>
+		<transition source="40" target="41">
+			<label>tau</label>
+		</transition>
+		<transition source="41" target="42">
+			<label>tau</label>
+		</transition>
+		<transition source="42" target="43">
+			<label>tau</label>
+		</transition>
+		<transition source="43" target="44">
+			<label>tau</label>
+		</transition>
+		<transition source="35" target="34">
+			<label>tau</label>
+		</transition>
+		<transition source="36" target="35">
+			<label>tau</label>
+		</transition>
+		<transition source="37" target="36">
+			<label>tau</label>
+		</transition>
+		<transition source="38" target="37">
+			<label>tau</label>
+		</transition>
+		<transition source="39" target="38">
+			<label>tau</label>
+		</transition>
+		<transition source="40" target="39">
+			<label>tau</label>
+		</transition>
+		<transition source="41" target="40">
+			<label>tau</label>
+		</transition>
+		<transition source="42" target="41">
+			<label>tau</label>
+		</transition>
+		<transition source="43" target="42">
+			<label>tau</label>
+		</transition>
+		<transition source="44" target="43">
+			<label>tau</label>
+		</transition>
+	</component>
+	<component id="rbc_template">
+		<param name="time" type="real" local="true" d1="1" d2="1" dynamics="any" />
+		<param name="MA1" type="label" local="false" />
+		<param name="MA2" type="label" local="false" />
+		<param name="MA3" type="label" local="false" />
+		<param name="MA4" type="label" local="false" />
+		<param name="MA5" type="label" local="false" />
+		<location id="1" name="loc0">
+			<flow>time'==1</flow>
+		</location>
+		<transition source="1" target="1">
+			<label>MA1</label>
+		</transition>
+		<transition source="1" target="1">
+			<label>MA2</label>
+		</transition>
+		<transition source="1" target="1">
+			<label>MA3</label>
+		</transition>
+		<transition source="1" target="1">
+			<label>MA4</label>
+		</transition>
+		<transition source="1" target="1">
+			<label>MA5</label>
+		</transition>
+	</component>
+	<component id="system">
+		<param name="MA1" type="label" local="false" />
+		<param name="MA2" type="label" local="false" />
+		<param name="MA3" type="label" local="false" />
+		<param name="MA4" type="label" local="false" />
+		<param name="MA5" type="label" local="false" />
+		<bind component="train_template" as="train1">
+			<map key="MA">MA1</map>
+		</bind>
+		<bind component="train_template" as="train2">
+			<map key="MA">MA2</map>
+		</bind>
+		<bind component="train_template" as="train3">
+			<map key="MA">MA3</map>
+		</bind>
+		<bind component="train_template" as="train4">
+			<map key="MA">MA4</map>
+		</bind>
+		<bind component="train_template" as="train5">
+			<map key="MA">MA5</map>
+		</bind>
+		<bind component="rbc_template" as="rbc">
+			<map key="MA1">MA1</map>
+			<map key="MA2">MA2</map>
+			<map key="MA3">MA3</map>
+			<map key="MA4">MA4</map>
+			<map key="MA5">MA5</map>
+		</bind>
+	</component>
+</sspaceex>

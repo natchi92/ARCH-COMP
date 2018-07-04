@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+	<component id="GlobalControllerType_template">
+		<param name="timer" type="real" local="true" d1="1" d2="1" dynamics="any" />
+		<param name="time" type="real" local="true" d1="1" d2="1" dynamics="any" />
+		<param name="start_cycle" type="label" local="true" />
+		<param name="read_data_1" type="label" local="false" />
+		<param name="read_data_2" type="label" local="false" />
+		<param name="read_data_3" type="label" local="false" />
+		<param name="read_data_4" type="label" local="false" />
+		<param name="read_data_5" type="label" local="false" />
+		<param name="read_data_6" type="label" local="false" />
+		<param name="read_data_7" type="label" local="false" />
+		<param name="read_data_8" type="label" local="false" />
+		<param name="read_data_9" type="label" local="false" />
+		<param name="read_data_10" type="label" local="false" />
+		<param name="read_data_11" type="label" local="false" />
+		<param name="read_data_12" type="label" local="false" />
+		<param name="read_data_13" type="label" local="false" />
+		<param name="read_data_14" type="label" local="false" />
+		<param name="read_data_15" type="label" local="false" />
+		<param name="read_data_16" type="label" local="false" />
+		<param name="read_data_17" type="label" local="false" />
+		<param name="read_data_18" type="label" local="false" />
+		<param name="read_data_19" type="label" local="false" />
+		<param name="read_data_20" type="label" local="false" />
+		<location id="1" name="s0">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=20</invariant>
+		</location>
+		<location id="2" name="s1">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=20</invariant>
+		</location>
+		<location id="3" name="s2">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=40</invariant>
+		</location>
+		<location id="4" name="s3">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=60</invariant>
+		</location>
+		<location id="5" name="s4">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=80</invariant>
+		</location>
+		<location id="6" name="s5">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=100</invariant>
+		</location>
+		<location id="7" name="s6">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=120</invariant>
+		</location>
+		<location id="8" name="s7">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=140</invariant>
+		</location>
+		<location id="9" name="s8">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=160</invariant>
+		</location>
+		<location id="10" name="s9">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=180</invariant>
+		</location>
+		<location id="11" name="s10">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=200</invariant>
+		</location>
+		<location id="12" name="s11">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=220</invariant>
+		</location>
+		<location id="13" name="s12">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=240</invariant>
+		</location>
+		<location id="14" name="s13">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=260</invariant>
+		</location>
+		<location id="15" name="s14">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=280</invariant>
+		</location>
+		<location id="16" name="s15">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=300</invariant>
+		</location>
+		<location id="17" name="s16">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=320</invariant>
+		</location>
+		<location id="18" name="s17">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=340</invariant>
+		</location>
+		<location id="19" name="s18">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=360</invariant>
+		</location>
+		<location id="20" name="s19">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=380</invariant>
+		</location>
+		<location id="21" name="s20">
+			<flow>timer'==1 &amp; time'==1</flow>
+			<invariant>timer&gt;=0 &amp; timer&lt;=400</invariant>
+		</location>
+		<transition source="1" target="2">
+			<label>start_cycle</label>
+			<guard>timer==20</guard>
+			<assignment>timer:=0</assignment>
+		</transition>
+		<transition source="2" target="3">
+			<label>read_data_1</label>
+			<guard>timer==20</guard>
+		</transition>
+		<transition source="3" target="4">
+			<label>read_data_2</label>
+			<guard>timer==40</guard>
+		</transition>
+		<transition source="4" target="5">
+			<label>read_data_3</label>
+			<guard>timer==60</guard>
+		</transition>
+		<transition source="5" target="6">
+			<label>read_data_4</label>
+			<guard>timer==80</guard>
+		</transition>
+		<transition source="6" target="7">
+			<label>read_data_5</label>
+			<guard>timer==100</guard>
+		</transition>
+		<transition source="7" target="8">
+			<label>read_data_6</label>
+			<guard>timer==120</guard>
+		</transition>
+		<transition source="8" target="9">
+			<label>read_data_7</label>
+			<guard>timer==140</guard>
+		</transition>
+		<transition source="9" target="10">
+			<label>read_data_8</label>
+			<guard>timer==160</guard>
+		</transition>
+		<transition source="10" target="11">
+			<label>read_data_9</label>
+			<guard>timer==180</guard>
+		</transition>
+		<transition source="11" target="12">
+			<label>read_data_10</label>
+			<guard>timer==200</guard>
+		</transition>
+		<transition source="12" target="13">
+			<label>read_data_11</label>
+			<guard>timer==220</guard>
+		</transition>
+		<transition source="13" target="14">
+			<label>read_data_12</label>
+			<guard>timer==240</guard>
+		</transition>
+		<transition source="14" target="15">
+			<label>read_data_13</label>
+			<guard>timer==260</guard>
+		</transition>
+		<transition source="15" target="16">
+			<label>read_data_14</label>
+			<guard>timer==280</guard>
+		</transition>
+		<transition source="16" target="17">
+			<label>read_data_15</label>
+			<guard>timer==300</guard>
+		</transition>
+		<transition source="17" target="18">
+			<label>read_data_16</label>
+			<guard>timer==320</guard>
+		</transition>
+		<transition source="18" target="19">
+			<label>read_data_17</label>
+			<guard>timer==340</guard>
+		</transition>
+		<transition source="19" target="20">
+			<label>read_data_18</label>
+			<guard>timer==360</guard>
+		</transition>
+		<transition source="20" target="21">
+			<label>read_data_19</label>
+			<guard>timer==380</guard>
+		</transition>
+		<transition source="21" target="1">
+			<label>read_data_20</label>
+			<guard>timer==400</guard>
+			<assignment>timer:=0</assignment>
+		</transition>
+	</component>
+	<component id="LocalControllerType_template">
+		<param name="timer" type="real" local="true" d1="1" d2="1" dynamics="any" />
+		<param name="period" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="offset" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="offset_ended" type="label" local="true" />
+		<param name="read_data" type="label" local="false" />
+		<param name="send_data" type="label" local="false" />
+		<location id="1" name="s0">
+			<invariant>timer&gt;=0 &amp; timer&lt;=offset</invariant>
+			<flow>timer'==1</flow>
+		</location>
+		<location id="2" name="s1">
+			<invariant>timer&gt;=0 &amp; timer&lt;=period</invariant>
+			<flow>timer'==1</flow>
+		</location>
+		<transition source="1" target="2">
+			<label>offset_ended</label>
+			<guard>timer==offset</guard>
+			<assignment>timer:=0</assignment>
+		</transition>
+		<transition source="2" target="2">
+			<label>read_data</label>
+			<guard>timer==period</guard>
+			<assignment>timer:=0</assignment>
+		</transition>
+		<transition source="2" target="2">
+			<label>send_data</label>
+		</transition>
+	</component>
+	<component id="LocalEnvType_template">
+		<param name="time" type="real" local="true" d1="1" d2="1" dynamics="any" />
+		<param name="send_data" type="label" local="false" />
+		<location id="1" name="s0">
+			<flow>time'==1</flow>
+		</location>
+		<transition source="1" target="1">
+			<label>send_data</label>
+		</transition>
+	</component>
+	<component id="system">
+		<param name="read_data_1" type="label" local="false" />
+		<param name="send_data_1" type="label" local="false" />
+		<param name="read_data_2" type="label" local="false" />
+		<param name="send_data_2" type="label" local="false" />
+		<param name="read_data_3" type="label" local="false" />
+		<param name="send_data_3" type="label" local="false" />
+		<param name="read_data_4" type="label" local="false" />
+		<param name="send_data_4" type="label" local="false" />
+		<param name="read_data_5" type="label" local="false" />
+		<param name="send_data_5" type="label" local="false" />
+		<param name="read_data_6" type="label" local="false" />
+		<param name="send_data_6" type="label" local="false" />
+		<param name="read_data_7" type="label" local="false" />
+		<param name="send_data_7" type="label" local="false" />
+		<param name="read_data_8" type="label" local="false" />
+		<param name="send_data_8" type="label" local="false" />
+		<param name="read_data_9" type="label" local="false" />
+		<param name="send_data_9" type="label" local="false" />
+		<param name="read_data_10" type="label" local="false" />
+		<param name="send_data_10" type="label" local="false" />
+		<param name="read_data_11" type="label" local="false" />
+		<param name="send_data_11" type="label" local="false" />
+		<param name="read_data_12" type="label" local="false" />
+		<param name="send_data_12" type="label" local="false" />
+		<param name="read_data_13" type="label" local="false" />
+		<param name="send_data_13" type="label" local="false" />
+		<param name="read_data_14" type="label" local="false" />
+		<param name="send_data_14" type="label" local="false" />
+		<param name="read_data_15" type="label" local="false" />
+		<param name="send_data_15" type="label" local="false" />
+		<param name="read_data_16" type="label" local="false" />
+		<param name="send_data_16" type="label" local="false" />
+		<param name="read_data_17" type="label" local="false" />
+		<param name="send_data_17" type="label" local="false" />
+		<param name="read_data_18" type="label" local="false" />
+		<param name="send_data_18" type="label" local="false" />
+		<param name="read_data_19" type="label" local="false" />
+		<param name="send_data_19" type="label" local="false" />
+		<param name="read_data_20" type="label" local="false" />
+		<param name="send_data_20" type="label" local="false" />
+		<bind component="GlobalControllerType_template" as="gc">
+			<map key="read_data_1">send_data_1</map>
+			<map key="read_data_2">send_data_2</map>
+			<map key="read_data_3">send_data_3</map>
+			<map key="read_data_4">send_data_4</map>
+			<map key="read_data_5">send_data_5</map>
+			<map key="read_data_6">send_data_6</map>
+			<map key="read_data_7">send_data_7</map>
+			<map key="read_data_8">send_data_8</map>
+			<map key="read_data_9">send_data_9</map>
+			<map key="read_data_10">send_data_10</map>
+			<map key="read_data_11">send_data_11</map>
+			<map key="read_data_12">send_data_12</map>
+			<map key="read_data_13">send_data_13</map>
+			<map key="read_data_14">send_data_14</map>
+			<map key="read_data_15">send_data_15</map>
+			<map key="read_data_16">send_data_16</map>
+			<map key="read_data_17">send_data_17</map>
+			<map key="read_data_18">send_data_18</map>
+			<map key="read_data_19">send_data_19</map>
+			<map key="read_data_20">send_data_20</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_1">
+			<map key="period">20</map>
+			<map key="offset">5</map>
+			<map key="read_data">read_data_1</map>
+			<map key="send_data">send_data_1</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_1">
+			<map key="send_data">read_data_1</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_2">
+			<map key="period">20</map>
+			<map key="offset">10</map>
+			<map key="read_data">read_data_2</map>
+			<map key="send_data">send_data_2</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_2">
+			<map key="send_data">read_data_2</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_3">
+			<map key="period">20</map>
+			<map key="offset">15</map>
+			<map key="read_data">read_data_3</map>
+			<map key="send_data">send_data_3</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_3">
+			<map key="send_data">read_data_3</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_4">
+			<map key="period">20</map>
+			<map key="offset">20</map>
+			<map key="read_data">read_data_4</map>
+			<map key="send_data">send_data_4</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_4">
+			<map key="send_data">read_data_4</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_5">
+			<map key="period">20</map>
+			<map key="offset">25</map>
+			<map key="read_data">read_data_5</map>
+			<map key="send_data">send_data_5</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_5">
+			<map key="send_data">read_data_5</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_6">
+			<map key="period">20</map>
+			<map key="offset">30</map>
+			<map key="read_data">read_data_6</map>
+			<map key="send_data">send_data_6</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_6">
+			<map key="send_data">read_data_6</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_7">
+			<map key="period">20</map>
+			<map key="offset">35</map>
+			<map key="read_data">read_data_7</map>
+			<map key="send_data">send_data_7</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_7">
+			<map key="send_data">read_data_7</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_8">
+			<map key="period">20</map>
+			<map key="offset">40</map>
+			<map key="read_data">read_data_8</map>
+			<map key="send_data">send_data_8</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_8">
+			<map key="send_data">read_data_8</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_9">
+			<map key="period">20</map>
+			<map key="offset">45</map>
+			<map key="read_data">read_data_9</map>
+			<map key="send_data">send_data_9</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_9">
+			<map key="send_data">read_data_9</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_10">
+			<map key="period">20</map>
+			<map key="offset">50</map>
+			<map key="read_data">read_data_10</map>
+			<map key="send_data">send_data_10</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_10">
+			<map key="send_data">read_data_10</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_11">
+			<map key="period">20</map>
+			<map key="offset">55</map>
+			<map key="read_data">read_data_11</map>
+			<map key="send_data">send_data_11</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_11">
+			<map key="send_data">read_data_11</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_12">
+			<map key="period">20</map>
+			<map key="offset">60</map>
+			<map key="read_data">read_data_12</map>
+			<map key="send_data">send_data_12</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_12">
+			<map key="send_data">read_data_12</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_13">
+			<map key="period">20</map>
+			<map key="offset">65</map>
+			<map key="read_data">read_data_13</map>
+			<map key="send_data">send_data_13</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_13">
+			<map key="send_data">read_data_13</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_14">
+			<map key="period">20</map>
+			<map key="offset">70</map>
+			<map key="read_data">read_data_14</map>
+			<map key="send_data">send_data_14</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_14">
+			<map key="send_data">read_data_14</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_15">
+			<map key="period">20</map>
+			<map key="offset">75</map>
+			<map key="read_data">read_data_15</map>
+			<map key="send_data">send_data_15</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_15">
+			<map key="send_data">read_data_15</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_16">
+			<map key="period">20</map>
+			<map key="offset">80</map>
+			<map key="read_data">read_data_16</map>
+			<map key="send_data">send_data_16</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_16">
+			<map key="send_data">read_data_16</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_17">
+			<map key="period">20</map>
+			<map key="offset">85</map>
+			<map key="read_data">read_data_17</map>
+			<map key="send_data">send_data_17</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_17">
+			<map key="send_data">read_data_17</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_18">
+			<map key="period">20</map>
+			<map key="offset">90</map>
+			<map key="read_data">read_data_18</map>
+			<map key="send_data">send_data_18</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_18">
+			<map key="send_data">read_data_18</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_19">
+			<map key="period">20</map>
+			<map key="offset">95</map>
+			<map key="read_data">read_data_19</map>
+			<map key="send_data">send_data_19</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_19">
+			<map key="send_data">read_data_19</map>
+		</bind>
+		<bind component="LocalControllerType_template" as="lc_20">
+			<map key="period">20</map>
+			<map key="offset">100</map>
+			<map key="read_data">read_data_20</map>
+			<map key="send_data">send_data_20</map>
+		</bind>
+		<bind component="LocalEnvType_template" as="lenv_20">
+			<map key="send_data">read_data_20</map>
+		</bind>
+	</component>
+</sspaceex>

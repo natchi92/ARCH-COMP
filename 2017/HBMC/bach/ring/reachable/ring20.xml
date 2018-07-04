@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+	<component id="process_template">
+		<param name="x" type="real" local="true" d1="1" d2="1" dynamics="any" />
+		<param name="d1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="d2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="l1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="l2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+		<param name="g1" type="label" local="false" />
+		<param name="g2" type="label" local="false" />
+		<param name="tau" type="label" local="false" />
+		<location id="1" name="s0">
+			<invariant>x&gt;=l1 &amp; x&lt;=l2</invariant>
+			<flow>x'==d1</flow>
+		</location>
+		<location id="2" name="s1">
+			<invariant>x&gt;=l1 &amp; x&lt;=l2</invariant>
+			<flow>x'==d2</flow>
+		</location>
+		<location id="3" name="s2">
+			<invariant>x&gt;=l1 &amp; x&lt;=l2</invariant>
+			<flow>x'==d1</flow>
+		</location>
+		<location id="4" name="s3">
+			<invariant>x&gt;=l1 &amp; x&lt;=l2</invariant>
+			<flow>x'==d2</flow>
+		</location>
+		<location id="5" name="s4">
+			<invariant>x&gt;=l1 &amp; x&lt;=l2</invariant>
+			<flow>x'==d1</flow>
+		</location>
+		<location id="6" name="s5">
+			<invariant>x&gt;=l1 &amp; x&lt;=l2</invariant>
+			<flow>x'==d2</flow>
+		</location>
+		<location id="7" name="s6">
+			<invariant>x&gt;=l1 &amp; x&lt;=l2</invariant>
+			<flow>x'==d1</flow>
+		</location>
+		<location id="8" name="s7">
+			<invariant>x&gt;=l1 &amp; x&lt;=l2</invariant>
+			<flow>x'==d2</flow>
+		</location>
+		<location id="9" name="s8">
+			<invariant>x&gt;=l1 &amp; x&lt;=l2</invariant>
+			<flow>x'==d1</flow>
+		</location>
+		<location id="10" name="s9">
+			<invariant>x&gt;=l1 &amp; x&lt;=l2</invariant>
+			<flow>x'==d2</flow>
+		</location>
+		<transition source="1" target="3">
+			<label>tau</label>
+			<guard>x&lt;2.1</guard>
+		</transition>
+		<transition source="1" target="1">
+			<label>tau</label>
+			<guard>x&gt;=2.1</guard>
+		</transition>
+		<transition source="1" target="2">
+			<label>g1</label>
+			<guard>x&gt;1.1</guard>
+		</transition>
+		<transition source="1" target="1">
+			<label>g1</label>
+			<guard>x&lt;=1.1</guard>
+		</transition>
+		<transition source="1" target="2">
+			<label>g2</label>
+		</transition>
+		<transition source="2" target="4">
+			<label>tau</label>
+			<guard>x&lt;2.1</guard>
+		</transition>
+		<transition source="2" target="1">
+			<label>tau</label>
+			<guard>x&gt;=2.1</guard>
+		</transition>
+		<transition source="2" target="2">
+			<label>g1</label>
+			<guard>x&gt;1.1</guard>
+		</transition>
+		<transition source="2" target="2">
+			<label>g1</label>
+			<guard>x&lt;=1.1</guard>
+		</transition>
+		<transition source="2" target="3">
+			<label>g2</label>
+		</transition>
+		<transition source="3" target="5">
+			<label>tau</label>
+			<guard>x&lt;2.1</guard>
+		</transition>
+		<transition source="3" target="1">
+			<label>tau</label>
+			<guard>x&gt;=2.1</guard>
+		</transition>
+		<transition source="3" target="2">
+			<label>g1</label>
+			<guard>x&gt;1.1</guard>
+		</transition>
+		<transition source="3" target="3">
+			<label>g1</label>
+			<guard>x&lt;=1.1</guard>
+		</transition>
+		<transition source="3" target="4">
+			<label>g2</label>
+		</transition>
+		<transition source="4" target="6">
+			<label>tau</label>
+			<guard>x&lt;2.1</guard>
+		</transition>
+		<transition source="4" target="1">
+			<label>tau</label>
+			<guard>x&gt;=2.1</guard>
+		</transition>
+		<transition source="4" target="2">
+			<label>g1</label>
+			<guard>x&gt;1.1</guard>
+		</transition>
+		<transition source="4" target="4">
+			<label>g1</label>
+			<guard>x&lt;=1.1</guard>
+		</transition>
+		<transition source="4" target="5">
+			<label>g2</label>
+		</transition>
+		<transition source="5" target="7">
+			<label>tau</label>
+			<guard>x&lt;2.1</guard>
+		</transition>
+		<transition source="5" target="1">
+			<label>tau</label>
+			<guard>x&gt;=2.1</guard>
+		</transition>
+		<transition source="5" target="2">
+			<label>g1</label>
+			<guard>x&gt;1.1</guard>
+		</transition>
+		<transition source="5" target="5">
+			<label>g1</label>
+			<guard>x&lt;=1.1</guard>
+		</transition>
+		<transition source="5" target="6">
+			<label>g2</label>
+		</transition>
+		<transition source="6" target="8">
+			<label>tau</label>
+			<guard>x&lt;2.1</guard>
+		</transition>
+		<transition source="6" target="1">
+			<label>tau</label>
+			<guard>x&gt;=2.1</guard>
+		</transition>
+		<transition source="6" target="2">
+			<label>g1</label>
+			<guard>x&gt;1.1</guard>
+		</transition>
+		<transition source="6" target="6">
+			<label>g1</label>
+			<guard>x&lt;=1.1</guard>
+		</transition>
+		<transition source="6" target="7">
+			<label>g2</label>
+		</transition>
+		<transition source="7" target="9">
+			<label>tau</label>
+			<guard>x&lt;2.1</guard>
+		</transition>
+		<transition source="7" target="1">
+			<label>tau</label>
+			<guard>x&gt;=2.1</guard>
+		</transition>
+		<transition source="7" target="2">
+			<label>g1</label>
+			<guard>x&gt;1.1</guard>
+		</transition>
+		<transition source="7" target="7">
+			<label>g1</label>
+			<guard>x&lt;=1.1</guard>
+		</transition>
+		<transition source="7" target="8">
+			<label>g2</label>
+		</transition>
+		<transition source="8" target="10">
+			<label>tau</label>
+			<guard>x&lt;2.1</guard>
+		</transition>
+		<transition source="8" target="1">
+			<label>tau</label>
+			<guard>x&gt;=2.1</guard>
+		</transition>
+		<transition source="8" target="2">
+			<label>g1</label>
+			<guard>x&gt;1.1</guard>
+		</transition>
+		<transition source="8" target="8">
+			<label>g1</label>
+			<guard>x&lt;=1.1</guard>
+		</transition>
+		<transition source="8" target="9">
+			<label>g2</label>
+		</transition>
+		<transition source="9" target="1">
+			<label>tau</label>
+			<guard>x&lt;2.1</guard>
+		</transition>
+		<transition source="9" target="1">
+			<label>tau</label>
+			<guard>x&gt;=2.1</guard>
+		</transition>
+		<transition source="9" target="2">
+			<label>g1</label>
+			<guard>x&gt;1.1</guard>
+		</transition>
+		<transition source="9" target="9">
+			<label>g1</label>
+			<guard>x&lt;=1.1</guard>
+		</transition>
+		<transition source="9" target="10">
+			<label>g2</label>
+		</transition>
+		<transition source="10" target="2">
+			<label>tau</label>
+			<guard>x&lt;2.1</guard>
+		</transition>
+		<transition source="10" target="1">
+			<label>tau</label>
+			<guard>x&gt;=2.1</guard>
+		</transition>
+		<transition source="10" target="2">
+			<label>g1</label>
+			<guard>x&gt;1.1</guard>
+		</transition>
+		<transition source="10" target="10">
+			<label>g1</label>
+			<guard>x&lt;=1.1</guard>
+		</transition>
+		<transition source="10" target="1">
+			<label>g2</label>
+		</transition>
+	</component>
+	<component id="system">
+		<param name="go_1" type="label" local="false" />
+		<param name="go_2" type="label" local="false" />
+		<param name="go_3" type="label" local="false" />
+		<param name="go_4" type="label" local="false" />
+		<param name="go_5" type="label" local="false" />
+		<param name="go_6" type="label" local="false" />
+		<param name="go_7" type="label" local="false" />
+		<param name="go_8" type="label" local="false" />
+		<param name="go_9" type="label" local="false" />
+		<param name="go_10" type="label" local="false" />
+		<param name="go_11" type="label" local="false" />
+		<param name="go_12" type="label" local="false" />
+		<param name="go_13" type="label" local="false" />
+		<param name="go_14" type="label" local="false" />
+		<param name="go_15" type="label" local="false" />
+		<param name="go_16" type="label" local="false" />
+		<param name="go_17" type="label" local="false" />
+		<param name="go_18" type="label" local="false" />
+		<param name="go_19" type="label" local="false" />
+		<param name="go_20" type="label" local="false" />
+		<bind component="process_template" as="p1">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_1</map>
+			<map key="g2">go_20</map>
+		</bind>
+		<bind component="process_template" as="p2">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_2</map>
+			<map key="g2">go_1</map>
+		</bind>
+		<bind component="process_template" as="p3">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_3</map>
+			<map key="g2">go_2</map>
+		</bind>
+		<bind component="process_template" as="p4">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_4</map>
+			<map key="g2">go_3</map>
+		</bind>
+		<bind component="process_template" as="p5">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_5</map>
+			<map key="g2">go_4</map>
+		</bind>
+		<bind component="process_template" as="p6">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_6</map>
+			<map key="g2">go_5</map>
+		</bind>
+		<bind component="process_template" as="p7">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_7</map>
+			<map key="g2">go_6</map>
+		</bind>
+		<bind component="process_template" as="p8">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_8</map>
+			<map key="g2">go_7</map>
+		</bind>
+		<bind component="process_template" as="p9">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_9</map>
+			<map key="g2">go_8</map>
+		</bind>
+		<bind component="process_template" as="p10">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_10</map>
+			<map key="g2">go_9</map>
+		</bind>
+		<bind component="process_template" as="p11">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_11</map>
+			<map key="g2">go_10</map>
+		</bind>
+		<bind component="process_template" as="p12">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_12</map>
+			<map key="g2">go_11</map>
+		</bind>
+		<bind component="process_template" as="p13">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_13</map>
+			<map key="g2">go_12</map>
+		</bind>
+		<bind component="process_template" as="p14">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_14</map>
+			<map key="g2">go_13</map>
+		</bind>
+		<bind component="process_template" as="p15">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_15</map>
+			<map key="g2">go_14</map>
+		</bind>
+		<bind component="process_template" as="p16">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_16</map>
+			<map key="g2">go_15</map>
+		</bind>
+		<bind component="process_template" as="p17">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_17</map>
+			<map key="g2">go_16</map>
+		</bind>
+		<bind component="process_template" as="p18">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_18</map>
+			<map key="g2">go_17</map>
+		</bind>
+		<bind component="process_template" as="p19">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_19</map>
+			<map key="g2">go_18</map>
+		</bind>
+		<bind component="process_template" as="p20">
+			<map key="d1">1.2</map>
+			<map key="d2">-0.7</map>
+			<map key="l1">-15.0</map>
+			<map key="l2">15.0</map>
+			<map key="g1">go_20</map>
+			<map key="g2">go_19</map>
+		</bind>
+	</component>
+</sspaceex>

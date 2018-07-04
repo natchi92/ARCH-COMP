@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+# But not gitignore
+!.gitignore
+
+# Note that this file ensures that the folder exists

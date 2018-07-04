@@ -1,0 +1,3 @@
+20 Mar 2015 (MA):
+
+- remove: newPolytopeMPT.m

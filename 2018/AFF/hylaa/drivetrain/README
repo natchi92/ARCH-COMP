@@ -1,0 +1,5 @@
+You can run the scripts one by one for the various models, or if you have hyst and hypy setup, you can run them all using run_all_hylaa.py
+
+Make sure you have Hyst installed and on your PATH and the pythonbridge works (run java -jar Hyst.jar -testpython). See the Hyst readme for setting up HYPY and the pythonbridge (mostly involves setting environment variables).
+
+For plotting, run hylaa_drivetrain_plot2.py

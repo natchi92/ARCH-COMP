@@ -1,0 +1,6 @@
+This is the repeatability package for the Hylaa tool, master branch, for the ARCH workshop tool competition 2018, prepared by Stanley Bak in May 2018.
+
+Please download and install version 1.1 of Hylaa from this link: https://github.com/stanleybak/hylaa/releases/tag/v1.1 . Installation instructions are in the README which comes with the tool.
+
+To recreate Hylaa's results, make sure it's on your PYTHONPATH (follow the Hylaa installation instructions), and then run the python scripts included here.  The scripts are named based on the model / safety property they check. Some scripts may compute multiple model / properties and then print a summary.
+

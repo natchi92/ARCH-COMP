@@ -1,0 +1,7 @@
+This is the repeatability package for the Hylaa tool, continuous branch, for the ARCH workshop tool competition 2018, prepared by Stanley Bak in May 2018.
+
+Please download and install version the continuous branch of the hylaa tool
+from this link: https://github.com/stanleybak/hylaa/releases/tag/continuous-May18 . Installation instructions are in the README which comes with the tool.
+
+
+To recreate Hylaa's results, make sure it's on your PYTHONPATH (follow the Hylaa installation instructions), and then run the python scripts included here.

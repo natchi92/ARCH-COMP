@@ -1,0 +1,6 @@
+Dataset for the Modest Toolset in the ARCH 2018 Friendly Competition.
+Models written and experiments performed by Arnd Hartmanns <a.hartmanns@utwente.nl>.
+
+The subset of the Modest Toolset, version 3.0.66, in zip file "Modest.zip" is licensed according to the conditions described in the file "Modest/License.txt" included in that zip file.
+
+The data in subfolder "Results", the models in subfolder "Models", and the file "Readme.txt" are licensed under the Creative Commons CC BY 4.0 license (https://creativecommons.org/licenses/by/4.0/).

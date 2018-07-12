@@ -1,0 +1,146 @@
+﻿// Version 4, only properties PDryOut and IDryOut commented in:
+// modes.exe unheated-tank-4.modest -R Uniform --relative-width --width 0.05 -E "TIME_BOUND=50, C_FAIL=0" -E "TIME_BOUND=100, C_FAIL=0" -E "TIME_BOUND=150, C_FAIL=0" -E "TIME_BOUND=200, C_FAIL=0" -E "TIME_BOUND=250, C_FAIL=0" -E "TIME_BOUND=300, C_FAIL=0" -E "TIME_BOUND=350, C_FAIL=0" -E "TIME_BOUND=400, C_FAIL=0" -E "TIME_BOUND=450, C_FAIL=0" -E "TIME_BOUND=500, C_FAIL=0" --rare FixedEffort --ifun-prop IDryOut 0 3 --levels StaticWidth 1 -O unheated-tank-4.dryout.results.txt -Y
+//
+// Version 4, only properties POverflow and IOverflow commented in:
+// modes.exe unheated-tank-4.modest -R Uniform --relative-width --width 0.025 -E "TIME_BOUND=50, C_FAIL=0" -E "TIME_BOUND=100, C_FAIL=0" -E "TIME_BOUND=150, C_FAIL=0" -E "TIME_BOUND=200, C_FAIL=0" -E "TIME_BOUND=250, C_FAIL=0" -E "TIME_BOUND=300, C_FAIL=0" -E "TIME_BOUND=350, C_FAIL=0" -E "TIME_BOUND=400, C_FAIL=0" -E "TIME_BOUND=450, C_FAIL=0" -E "TIME_BOUND=500, C_FAIL=0" --rare FixedEffort --ifun-prop IOverflow 0 3 --levels StaticWidth 1 -O unheated-tank-4.overflow.results.txt -Y
+//
+// Note that there is likely an error in Table 8, column "dry out", of [emss.pdf]:
+// the values up to and including for 350h are actually the values for 50 hours later
+
+const real TIME_BOUND;
+const real C_FAIL; // probability for controller action to fail
+
+const real HLP = 5; // overflow level
+const real HLB = 1; // upper activation level
+const real HLA = -1; // lower activation level
+const real HLV = -5; // dry-out level
+
+const real P1_FAIL = 1 / 219; // failure rate of pump P1
+const real P2_FAIL = 1 / 175; // failure rate of pump P2
+const real V_FAIL = 1 / 320; // failure rate of valve V
+const real REPAIR = 1 / 5; // repair rate of all components
+
+action init;
+
+bool on_p1 = true, on_p2 = false, on_v = true; // initial configuration: P1 on, P2 off, V on
+int(0..2) fail_p1, fail_p2, fail_v; // 0: not failed, 1: stuck open, 2: stuck closed
+
+var level = 0; // liquid level in tank
+der(level) = (on_p1 && fail_p1 == 0 || fail_p1 == 1 ? 0.6 : 0) + (on_p2 && fail_p2 == 0 || fail_p2 == 1 ? 0.6 : 0) + (on_v && fail_v == 0 || fail_v == 1 ? -0.6 : 0);
+
+bool overflow, dryout;
+int(0..2) grace; // 0: not started, 1: grace period, 2: grace period ended
+
+//property PFail = Pmax(<>[T<=TIME_BOUND] (overflow || dryout));
+//property IFail = (fail_p1 == 0 ? 0 : 1) + (fail_p2 == 0 ? 0 : 1) + (fail_v == 0 ? 0 : 1); // importance function for failure
+
+property PDryOut = Pmax(<>[T<=TIME_BOUND] dryout);
+property IDryOut = (fail_p1 == 2 ? 1 : 0) + (fail_p2 == 2 ? 1 : 0) + (fail_v == 1 ? 1 : 0); // importance function for dryout
+
+//property POverflow = Pmax(<>[T<=TIME_BOUND] overflow);
+//property IOverflow = (fail_p1 == 1 ? 1 : 0) + (fail_p2 == 1 ? 1 : 0) + (fail_v == 2 ? 1 : 0); // importance function for overflow
+
+process Pump1()
+{
+   clock c; real x;
+
+   invariant(false) init {= x = Exp(P1_FAIL) =};
+   do {
+      when(c >= x) invariant(c <= x) palt { // failure
+      :1: {= fail_p1 = 1 =} // stuck open
+      :1: {= fail_p1 = 2 =} // stuck closed
+      };
+      when(grace != 0) invariant(grace == 0) {= c = 0, x = Exp(REPAIR) =};
+      alt {
+      :: when(c >= x) invariant(c <= x) {= fail_p1 = 0, c = 0, x = Exp(P1_FAIL) =} // repair
+      :: when(grace == 2) invariant(grace != 2) break
+      }
+   }
+}
+
+process Pump2()
+{
+   clock c; real x;
+
+   invariant(false) init {= x = Exp(P2_FAIL) =};
+   do {
+      when(c >= x) invariant(c <= x) palt { // failure
+      :1: {= fail_p2 = 1 =} // stuck open
+      :1: {= fail_p2 = 2 =} // stuck closed
+      };
+      when(grace != 0) invariant(grace == 0) {= c = 0, x = Exp(REPAIR) =};
+      alt {
+      :: when(c >= x) invariant(c <= x) {= fail_p2 = 0, c = 0, x = Exp(P2_FAIL) =} // repair
+      :: when(grace == 2) invariant(grace != 2) break
+      }
+   }
+}
+
+process Valve()
+{
+   clock c; real x;
+
+   invariant(false) init {= x = Exp(V_FAIL) =};
+   do {
+      when(c >= x) invariant(c <= x) palt { // failure
+      :1: {= fail_v = 1 =} // stuck open
+      :1: {= fail_v = 2 =} // stuck closed
+      };
+      when(grace != 0) invariant(grace == 0) {= c = 0, x = Exp(REPAIR) =};
+      alt {
+      :: when(c >= x) invariant(c <= x) {= fail_v = 0, c = 0, x = Exp(V_FAIL) =} // repair
+      :: when(grace == 2) invariant(grace != 2) break
+      }
+   }
+}
+
+process Controller()
+{
+   process Normal()
+   {
+      alt {
+      :: invariant(level <= HLB) when(level >= HLB) palt {
+         :1-C_FAIL: {= on_p1 = false, on_p2 = false, on_v = true, grace = 1 =}
+         :  C_FAIL: {= grace = 1 =}
+         }; High()
+      :: invariant(level >= HLA) when(level <= HLA) palt {
+         :1-C_FAIL: {= on_p1 = true, on_p2 = true, on_v = false, grace = 1 =}
+         :  C_FAIL: {= grace = 1 =}
+         }; Low()
+      }
+   }
+   
+   process High()
+   {
+      invariant(level >= HLA) when(level <= HLA) palt {
+      :1-C_FAIL: {= on_p1 = true, on_p2 = true, on_v = false =}
+      :  C_FAIL: {==}
+      }; Low()
+   }
+   
+   process Low()
+   {
+      invariant(level <= HLB) when(level >= HLB) palt {
+      :1-C_FAIL: {= on_p1 = false, on_p2 = false, on_v = true =}
+      :  C_FAIL: {==}
+      }; High()
+   }
+   
+   Normal()
+}
+
+process Observer()
+{
+   par {
+   :: invariant(level <= HLP) when(level >= HLP) {= overflow = true, grace = 2 =}
+   :: invariant(level >= HLV) when(level <= HLV) {= dryout = true, grace = 2 =}
+   }
+}
+
+par {
+:: Pump1()
+:: Pump2()
+:: Valve()
+:: Controller()
+:: Observer()
+}

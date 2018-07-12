@@ -1,0 +1,251 @@
+﻿Analysis results for unheated-tank-4.modest
+
++ Experiment TIME_BOUND=50.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 7.5 s
+
+  + Property "POverflow"
+    Confidence interval: [0.000801157370240182, 0.000842241514243517]
+    Runs used:           9604
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.000821699442241849
+      Variance: 1.0549805759793E-06
+      Skewness: 1.93327332193652
+      Kurtosis: 8.4909966660434
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=100.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 7.2 s
+
+  + Property "POverflow"
+    Confidence interval: [0.00245771288612261, 0.00258374797008339]
+    Runs used:           4425
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.002520730428103
+      Variance: 4.57446186801921E-06
+      Skewness: 1.43565806870508
+      Kurtosis: 6.1714144752182
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=150.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 7.0 s
+
+  + Property "POverflow"
+    Confidence interval: [0.00427252111891913, 0.00449160744686912]
+    Runs used:           3000
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.00438206428289413
+      Variance: 9.37120922057766E-06
+      Skewness: 1.14095561703456
+      Kurtosis: 4.63003946957323
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=200.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 8.8 s
+
+  + Property "POverflow"
+    Confidence interval: [0.00617860642338875, 0.00649537987683196]
+    Runs used:           2683
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.00633699315011036
+      Variance: 1.75211278182302E-05
+      Skewness: 1.20888112036833
+      Kurtosis: 5.30166393807809
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=250.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 9.5 s
+
+  + Property "POverflow"
+    Confidence interval: [0.00763826836953402, 0.00802994548418332]
+    Runs used:           2329
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.00783410692685867
+      Variance: 2.32525029878822E-05
+      Skewness: 1.01374358622385
+      Kurtosis: 4.24237263731943
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=300.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 10.9 s
+
+  + Property "POverflow"
+    Confidence interval: [0.00907783106180756, 0.00954317350840079]
+    Runs used:           2163
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.00931050228510418
+      Variance: 3.04821561716064E-05
+      Skewness: 0.913422360711396
+      Kurtosis: 4.01727893833917
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=350.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 12.5 s
+
+  + Property "POverflow"
+    Confidence interval: [0.0102178961243232, 0.0107418109941647]
+    Runs used:           2067
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.0104798535592439
+      Variance: 3.69237458444158E-05
+      Skewness: 0.934329203128596
+      Kurtosis: 4.21832244355533
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=400.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 14.1 s
+
+  + Property "POverflow"
+    Confidence interval: [0.011110066268799, 0.011679771596097]
+    Runs used:           2033
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.011394918932448
+      Variance: 4.29419504399753E-05
+      Skewness: 0.907074934283041
+      Kurtosis: 4.2019312472191
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=450.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 16.1 s
+
+  + Property "POverflow"
+    Confidence interval: [0.0122001468733786, 0.0128255722768874]
+    Runs used:           1995
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.012512859575133
+      Variance: 5.07852695067123E-05
+      Skewness: 0.848903710059188
+      Kurtosis: 3.76546820594926
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=500.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 18.2 s
+
+  + Property "POverflow"
+    Confidence interval: [0.0127668917291945, 0.0134215694009085]
+    Runs used:           2038
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.0130942305650515
+      Variance: 5.68464128407577E-05
+      Skewness: 0.916546126739898
+      Kurtosis: 4.15178437038736
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4

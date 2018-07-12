@@ -1,0 +1,321 @@
+﻿Analysis results for unheated-tank-2.modest
+
++ Experiment TIME_BOUND=100.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 7.4 s
+
+  + Properties "PFail", "PDryOut" and "POverflow"
+    Run type: STA
+    Status:   Finished
+
+    + Property "PFail"
+      Confidence interval: [0.0994129341915446, 0.101421135083294]
+      Runs used:           344180
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "PDryOut"
+      Confidence interval: [0.0199168501283423, 0.0203191882918239]
+      Runs used:           1871250
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "POverflow"
+      Confidence interval: [0.0793730237358125, 0.0809764226489812]
+      Runs used:           440770
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
++ Experiment TIME_BOUND=200.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 4.5 s
+
+  + Properties "PFail", "PDryOut" and "POverflow"
+    Run type: STA
+    Status:   Finished
+
+    + Property "PFail"
+      Confidence interval: [0.205443550187782, 0.209593575703661]
+      Runs used:           146720
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "PDryOut"
+      Confidence interval: [0.0389862375628047, 0.039773794134115]
+      Runs used:           937170
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "POverflow"
+      Confidence interval: [0.166572352713669, 0.16993730328567]
+      Runs used:           189910
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
++ Experiment TIME_BOUND=300.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 3.6 s
+
+  + Properties "PFail", "PDryOut" and "POverflow"
+    Run type: STA
+    Status:   Finished
+
+    + Property "PFail"
+      Confidence interval: [0.283891483677196, 0.289626447388273]
+      Runs used:           95550
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "PDryOut"
+      Confidence interval: [0.0530870580359918, 0.0541594605701905]
+      Runs used:           678040
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "POverflow"
+      Confidence interval: [0.232609512243896, 0.2373084371395]
+      Runs used:           125090
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
++ Experiment TIME_BOUND=400.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 3.0 s
+
+  + Properties "PFail", "PDryOut" and "POverflow"
+    Run type: STA
+    Status:   Finished
+
+    + Property "PFail"
+      Confidence interval: [0.338864067601002, 0.345709377239456]
+      Runs used:           73820
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "PDryOut"
+      Confidence interval: [0.0626412208321617, 0.0639066294570024]
+      Runs used:           568760
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "POverflow"
+      Confidence interval: [0.275558550020201, 0.281125214849897]
+      Runs used:           99600
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
++ Experiment TIME_BOUND=500.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 2.9 s
+
+  + Properties "PFail", "PDryOut" and "POverflow"
+    Run type: STA
+    Status:   Finished
+
+    + Property "PFail"
+      Confidence interval: [0.373940061245106, 0.381493422044039]
+      Runs used:           63300
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "PDryOut"
+      Confidence interval: [0.0694480809643235, 0.0708509912118422]
+      Runs used:           509250
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "POverflow"
+      Confidence interval: [0.305543497343038, 0.311715365028511]
+      Runs used:           86070
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
++ Experiment TIME_BOUND=600.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 2.8 s
+
+  + Properties "PFail", "PDryOut" and "POverflow"
+    Run type: STA
+    Status:   Finished
+
+    + Property "PFail"
+      Confidence interval: [0.403524935566157, 0.411676746238061]
+      Runs used:           55830
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "PDryOut"
+      Confidence interval: [0.07370672746344, 0.0751956603769099]
+      Runs used:           477610
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "POverflow"
+      Confidence interval: [0.327545721251967, 0.33416190371558]
+      Runs used:           77710
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
++ Experiment TIME_BOUND=700.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 2.6 s
+
+  + Properties "PFail", "PDryOut" and "POverflow"
+    Run type: STA
+    Status:   Finished
+
+    + Property "PFail"
+      Confidence interval: [0.418561709708006, 0.427016807046406]
+      Runs used:           52450
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "PDryOut"
+      Confidence interval: [0.0754233708864, 0.0769469895960527]
+      Runs used:           465860
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "POverflow"
+      Confidence interval: [0.341222055199058, 0.348115203811438]
+      Runs used:           73040
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
++ Experiment TIME_BOUND=800.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 2.6 s
+
+  + Properties "PFail", "PDryOut" and "POverflow"
+    Run type: STA
+    Status:   Finished
+
+    + Property "PFail"
+      Confidence interval: [0.432112270286584, 0.440841117703907]
+      Runs used:           49600
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "PDryOut"
+      Confidence interval: [0.0776658387205264, 0.0792347567406841]
+      Runs used:           451300
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "POverflow"
+      Confidence interval: [0.353006129595061, 0.360137291462865]
+      Runs used:           69320
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
++ Experiment TIME_BOUND=900.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 2.6 s
+
+  + Properties "PFail", "PDryOut" and "POverflow"
+    Run type: STA
+    Status:   Finished
+
+    + Property "PFail"
+      Confidence interval: [0.434769546703381, 0.443552251539616]
+      Runs used:           49060
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "PDryOut"
+      Confidence interval: [0.0790993753290857, 0.0806972604618474]
+      Runs used:           442420
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "POverflow"
+      Confidence interval: [0.357152738196389, 0.364367088039215]
+      Runs used:           68080
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
++ Experiment TIME_BOUND=1000.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 2.6 s
+
+  + Properties "PFail", "PDryOut" and "POverflow"
+    Run type: STA
+    Status:   Finished
+
+    + Property "PFail"
+      Confidence interval: [0.440931349042521, 0.449838291507809]
+      Runs used:           47840
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "PDryOut"
+      Confidence interval: [0.0787639755393849, 0.0803550629091098]
+      Runs used:           444480
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05
+
+    + Property "POverflow"
+      Confidence interval: [0.363646189015316, 0.370992157302732]
+      Runs used:           66170
+
+      + Error bounds
+        Statement: CI: 100(1 - α)% of intervals contain true probability (Agresti-Coull)
+        α:         0.05

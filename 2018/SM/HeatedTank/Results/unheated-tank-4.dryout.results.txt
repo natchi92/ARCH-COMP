@@ -1,0 +1,251 @@
+﻿Analysis results for unheated-tank-4.modest
+
++ Experiment TIME_BOUND=50.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 42.6 s
+
+  + Property "PDryOut"
+    Confidence interval: [4.3685269286959E-06, 4.8283430589612E-06]
+    Runs used:           64920
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     4.59843499382855E-06
+      Variance: 8.93286441309404E-10
+      Skewness: 9.88601519654909
+      Kurtosis: 139.688944713941
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=100.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 18.6 s
+
+  + Property "PDryOut"
+    Confidence interval: [2.73686993050286E-05, 3.02494385301936E-05]
+    Runs used:           13138
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     2.88090689176111E-05
+      Variance: 7.09546686844754E-09
+      Skewness: 4.85847695647028
+      Kurtosis: 42.9640729611408
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=150.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 15.8 s
+
+  + Property "PDryOut"
+    Confidence interval: [7.48387153283043E-05, 8.2714578815559E-05]
+    Runs used:           6959
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     7.87766470719316E-05
+      Variance: 2.80922822282556E-08
+      Skewness: 3.54219609765496
+      Kurtosis: 20.3274780139944
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=200.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 15.1 s
+
+  + Property "PDryOut"
+    Confidence interval: [0.000135714137987037, 0.000149993863376908]
+    Runs used:           4555
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.000142854000681973
+      Variance: 6.04466057978082E-08
+      Skewness: 2.99970661186477
+      Kurtosis: 15.6779834775666
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=250.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 15.7 s
+
+  + Property "PDryOut"
+    Confidence interval: [0.000209552762130582, 0.00023160861536114]
+    Runs used:           3513
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.000220580688745861
+      Variance: 1.11216622669758E-07
+      Skewness: 2.85825342032004
+      Kurtosis: 16.9499665509538
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=300.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 17.0 s
+
+  + Property "PDryOut"
+    Confidence interval: [0.000271867029521387, 0.000300480588041857]
+    Runs used:           3053
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.000286173808781622
+      Variance: 1.62672587683443E-07
+      Skewness: 2.52730030845577
+      Kurtosis: 12.9554817174967
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=350.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 17.8 s
+
+  + Property "PDryOut"
+    Confidence interval: [0.000348526935891237, 0.000385205568048587]
+    Runs used:           2656
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.000366866251969912
+      Variance: 2.32540263347892E-07
+      Skewness: 2.53353754004864
+      Kurtosis: 13.3668163011577
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=400.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 18.9 s
+
+  + Property "PDryOut"
+    Confidence interval: [0.000391961744645109, 0.000433212304130507]
+    Runs used:           2434
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.000412587024387808
+      Variance: 2.69540535675911E-07
+      Skewness: 2.00957131432803
+      Kurtosis: 8.46020376214342
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=450.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 21.1 s
+
+  + Property "PDryOut"
+    Confidence interval: [0.000444522245613561, 0.000491299321464332]
+    Runs used:           2393
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.000467910783538946
+      Variance: 3.40763181449058E-07
+      Skewness: 1.92750166017938
+      Kurtosis: 8.11158008604263
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4
+
++ Experiment TIME_BOUND=500.0, C_FAIL=0.0
+  Status:          Finished
+  Simulation time: 25.4 s
+
+  + Property "PDryOut"
+    Confidence interval: [0.00048368240419298, 0.000534588191419692]
+    Runs used:           2517
+    Run type:            STA / fixed effort (64)
+    Status:              Finished
+
+    + Sample data
+      Mean:     0.000509135297806336
+      Variance: 4.2448403219467E-07
+      Skewness: 2.33056958717808
+      Kurtosis: 11.5402569579336
+
+    + Error bounds
+      Statement: CI: 100(1 - α)% of intervals contain true probability (CLT assumption)
+      α:         0.05
+
+    + Importance function
+      Type:               Ad-hoc monolithic
+      Level calc. method: Static width (1)
+      Levels:             4

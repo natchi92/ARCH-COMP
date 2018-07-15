@@ -1,0 +1,91 @@
+% Formal Abstractions of Uncountable-STate STochastic processes (FAUST2) Toolbox
+% Version 1.0 (7-Feb-2014)
+
+Webpages:
+http://sourceforge.net/projects/FAUST2
+
+Authors:
+Sadegh Esmaeil Zadeh Soudjani, Caspar Gevaerts, and Alessandro Abate
+
+Emails contacts:
+{S.EsmaeilZadehSoudjani,A.Abate}@tudelft.nl
+alessandro.abate@cs.ox.ac.uk
+
+Mail contacts:
+1) Delft Center for Systems and Control
+   TU Delft - Delft University of Technology
+   Mekelweg 2, 2628CD Delft, 
+   The Netherlands
+2) Department of Computer Science
+   University of Oxford
+   Wolfson Building, Parks Road, Oxford, OX1 3QD,
+   United Kingdom
+
+Bibliographical references:
+1) S. Esmaeil Zadeh Soudjani, C. Gevaerts, and A. Abate,
+	``FAUST2: Formal Abstractions of Uncountable-STate STochastic processes''
+	Submitted to the 26th International Conference on Computer Aided Verification, July 2014, Vienna, Austria.
+2) S. Esmaeil Zadeh Soudjani and A. Abate,
+	``Adaptive and sequential gridding procedures for the abstraction and verification of stochastic processes''
+	SIAM Journal on Applied Dynamical Systems, 2013, pp. 921-956.
+3) I. Tkachev and A. Abate,
+	``Formula-free Finite Abstractions for Linear Temporal Verification of Stochastic Hybrid Systems''
+	In: Proceedings of the 16th International Conference on Hybrid Systems: Computation and Control,
+	April 2013, pp. 283-292, Philadelphia, PA.
+4) A. Abate, J.P. Katoen, J. Lygeros, M. Prandini,
+	``Approximate model checking of stochastic hybrid systems''
+	European Journal of Control, 2010, pp. 624-641.
+
+Additional bibliographical references:
+1) S. Esmaeil Zadeh Soudjani and A. Abate,
+	``Adaptive Gridding for Abstraction and Verification of Stochastic Hybrid Systems''
+	Proceedings of the 8th International Conference on Quantitative Evaluation of Systems,
+	Sep 2011, pp. 59-69, Aachen, DE.
+2) S. Esmaeil Zadeh Soudjani and A. Abate,
+	``Probabilistic Invariance of Mixed Deterministic-Stochastic Dynamical Systems''
+	ACM Proceedings of the 15th International Conference on Hybrid Systems: Computation and Control,
+	April 2012, pp. 207-216, Beijing, PRC.
+3) S. Esmaeil Zadeh Soudjani and A. Abate,
+	``Higher-Order Approximations for Verification of Stochastic Hybrid Systems''
+	Automated Technology for Verification and Analysis, Volume 7561 of Lecture Notes in Computer Science,
+	Springer Verlag, Berlin Heidelberg (2012)  416-434.
+4) S. Esmaeil Zadeh Soudjani and A. Abate,
+	``Probabilistic reach-avoid computation for partially-degenerate stochastic processes''
+	IEEE Transactions on Automatic Control, Volume 59(2), 2014, pp. 528-534.
+
+Description
+===========
+
+FAUST2 is a software tool that generates formal abstractions
+of (possibly nondeterministic) discrete-time Markov processes
+(dtMP) defined over uncountable (continuous) state spaces.
+A dtMP model is specified in MATLAB and abstracted as a
+finite-state Markov chain or Markov decision processes.
+The abstraction procedure runs in MATLAB and employs parallel
+computations and fast manipulations based on vector calculus.
+The abstract model is formally put in relationship with the
+concrete dtMP via a user-defined maximum threshold on the
+approximation error introduced by the abstraction procedure.
+FAUST2 allows exporting the abstract model to well-known
+probabilistic model checkers, such as PRISM or MRMC. Alternatively,
+it can handle internally the computation of PCTL properties 
+(e.g. safety or reach-avoid) over the abstract model, and refine
+the outcomes over the concrete dtMP via a quantified error that
+depends on the abstraction procedure and the given formula.
+
+Installation
+============
+
+This toolbox consists of the following main files: 
+
+In order to use this toolbox, set a Matlab path to the "FAUST2/" directory.
+This toolbox has been successfully tested with Matlab R2012a, R2012b, R2013a, R2013b.
+
+Support
+=======
+
+There is no support! This toolbox is made freely available in the hope 
+that you find it useful in solving whatever problems you have to hand.
+We are happy to correspond with people who have found genuine bugs. 
+If you have any questions or comments, or you observe buggy behavior 
+of this toolbox, please send your reports by email to the authors.

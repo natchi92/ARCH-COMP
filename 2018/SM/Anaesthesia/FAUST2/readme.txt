@@ -12,6 +12,6 @@ In the report we have used:
 
 and
 
-(B) N= 5, epsilon = 0.4;
+(B) N = 5, epsilon = 0.4;
 
 In both cases, the synthesised policy is computed and is stored in the .mat file using a variable called 'OptimPol'
